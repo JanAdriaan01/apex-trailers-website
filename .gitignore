@@ -1,0 +1,20 @@
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node.js files (if you use npm packages)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Test files (optional - exclude if you want these in your repo)
+test-svg.js
+*.test.js
