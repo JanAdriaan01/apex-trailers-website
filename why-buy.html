@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apex Trailers - Premium Mobile Cooling Trailers in Midrand, Gauteng. Built to Last. Trusted to Deliver. Strong, Reliable, Insulated.">
-    <title>Apex Trailers | Mobile Cooling Trailers - Built to Last</title>
+    <meta name="description" content="Why Choose Apex Trailers - Expert mobile cooling solutions with rigorous quality standards. Investment-worthy refrigerated trailers built for South African conditions.">
+    <title>Why Buy an Apex Trailer | Apex Trailers</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -204,6 +204,11 @@
             color: var(--primary-blue);
         }
 
+        .nav-dropdown-menu li a.active {
+            background: var(--ice-blue);
+            color: var(--primary-blue);
+        }
+
         .btn {
             display: inline-flex;
             align-items: center;
@@ -249,11 +254,6 @@
             color: var(--white);
         }
 
-        .btn-sm {
-            padding: 8px 16px;
-            font-size: 13px;
-        }
-
         .btn-lg {
             padding: 16px 32px;
             font-size: 16px;
@@ -261,7 +261,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, #002855 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
             padding: 100px 0;
             position: relative;
             overflow: hidden;
@@ -280,66 +280,34 @@
         .hero .container {
             position: relative;
             z-index: 1;
-            max-width: 700px;
+            text-align: center;
+            max-width: 800px;
         }
 
         .hero h1 {
-            font-size: 52px;
+            font-size: 48px;
             color: var(--white);
             margin-bottom: 24px;
-            line-height: 1.2;
-        }
-
-        .hero-tagline {
-            font-size: 28px;
-            color: var(--accent-orange);
-            font-weight: 700;
-            margin-bottom: 16px;
-            display: block;
-        }
-
-        .hero-subtagline {
-            font-size: 20px;
-            color: rgba(255,255,255,0.9);
-            font-weight: 600;
-            margin-bottom: 24px;
-            display: block;
         }
 
         .hero p {
-            font-size: 18px;
-            color: rgba(255,255,255,0.85);
-            margin-bottom: 16px;
-            line-height: 1.8;
-        }
-
-        .hero-location {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255,255,255,0.15);
-            color: var(--white);
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 15px;
+            font-size: 20px;
+            color: rgba(255,255,255,0.9);
             margin-bottom: 32px;
-        }
-
-        .hero-location svg {
-            width: 20px;
-            height: 20px;
-            fill: var(--accent-orange);
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
         }
 
         /* Section Styles */
         .section {
             padding: 80px 0;
+        }
+
+        .section-alt {
+            background: var(--ice-blue);
+        }
+
+        .section-dark {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #001f4d 100%);
+            color: white;
         }
 
         .section-title {
@@ -355,200 +323,205 @@
 
         .section-title p {
             color: var(--text-medium);
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
         }
 
-        /* Features Section */
+        .section-dark .section-title h2 {
+            color: var(--white);
+        }
+
+        .section-dark .section-title p {
+            color: rgba(255,255,255,0.85);
+        }
+
+        /* Content Block */
+        .content-block {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content-block h3 {
+            font-size: 28px;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .content-block p {
+            font-size: 17px;
+            color: var(--text-medium);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .content-block ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .content-block li {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 16px;
+            font-size: 17px;
+            color: var(--text-medium);
+        }
+
+        .content-block li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 20px;
+            height: 20px;
+            background: var(--accent-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-block li::after {
+            content: '✓';
+            position: absolute;
+            left: 5px;
+            top: 3px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Feature Grid */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+            gap: 30px;
         }
 
         .feature-card {
             text-align: center;
-            padding: 32px 24px;
+            padding: 40px 30px;
             background: var(--white);
             border-radius: 12px;
-            box-shadow: var(--shadow-sm);
+            box-shadow: var(--shadow-md);
             transition: var(--transition);
         }
 
         .feature-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
         }
 
         .feature-icon {
-            width: 64px;
-            height: 64px;
+            width: 80px;
+            height: 80px;
             background: var(--ice-blue);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 20px;
+            margin: 0 auto 24px;
         }
 
         .feature-icon svg {
-            width: 32px;
-            height: 32px;
+            width: 40px;
+            height: 40px;
             fill: var(--primary-blue);
         }
 
         .feature-card h4 {
-            font-size: 16px;
+            font-size: 20px;
             color: var(--text-dark);
-            margin-bottom: 10px;
+            margin-bottom: 16px;
         }
 
         .feature-card p {
-            font-size: 14px;
+            font-size: 15px;
             color: var(--text-medium);
+            line-height: 1.7;
         }
 
-        /* Product Grid */
-        .grid {
-            display: grid;
-            gap: 30px;
-        }
-
-        .grid-4 {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .product-card {
-            background: var(--white);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--shadow-md);
-            transition: var(--transition);
-        }
-
-        .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .product-image {
-            height: 220px;
-            background: linear-gradient(135deg, var(--ice-blue) 0%, #d4e9f7 100%);
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .product-image svg {
-            width: 140px;
-            height: 100px;
-            opacity: 0.4;
-        }
-
-        .product-badge {
-            position: absolute;
-            top: 16px;
-            left: 16px;
-            background: var(--accent-orange);
-            color: var(--white);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .product-content {
-            padding: 24px;
-        }
-
-        .product-content h3 {
-            font-size: 20px;
-            color: var(--text-dark);
-            margin-bottom: 8px;
-        }
-
-        .product-dimensions {
-            font-size: 13px;
-            color: var(--text-medium);
-            display: block;
-            margin-bottom: 12px;
-        }
-
-        .product-price {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary-blue);
-            margin-bottom: 16px;
-        }
-
-        .product-price span {
-            font-size: 14px;
-            font-weight: 400;
-            color: var(--text-medium);
-        }
-
-        .product-features {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .product-features li {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--text-medium);
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-
-        .product-features li svg {
-            width: 18px;
-            height: 18px;
-            fill: var(--primary-blue);
-            flex-shrink: 0;
-        }
-
-        /* Feature Items */
+        /* Feature Item (Dark Section) */
         .feature-item {
             text-align: center;
-            padding: 24px;
+            padding: 32px 24px;
         }
 
         .feature-item svg {
-            width: 48px;
-            height: 48px;
-            fill: rgba(255,255,255,0.8);
-            margin-bottom: 16px;
+            width: 56px;
+            height: 56px;
+            fill: rgba(255,255,255,0.9);
+            margin-bottom: 20px;
         }
 
         .feature-item h4 {
-            font-size: 18px;
+            font-size: 20px;
             color: var(--white);
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .feature-item p {
-            font-size: 14px;
+            font-size: 15px;
             color: rgba(255,255,255,0.8);
+            line-height: 1.7;
+        }
+
+        /* Value Props */
+        .value-props {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .value-prop {
+            text-align: center;
+            padding: 40px;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .value-prop h3 {
+            font-size: 24px;
+            color: var(--primary-blue);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .value-prop h3 svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--accent-orange);
+        }
+
+        .value-prop p {
+            font-size: 16px;
+            color: var(--text-medium);
+            line-height: 1.8;
         }
 
         /* CTA Section */
         .cta-section {
             background: var(--ice-blue);
             text-align: center;
+            padding: 80px 0;
         }
 
         .cta-section h2 {
-            font-size: 32px;
+            font-size: 36px;
             color: var(--primary-blue);
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
 
         .cta-section p {
             color: var(--text-medium);
             max-width: 600px;
             margin: 0 auto 32px;
+            font-size: 18px;
         }
 
         /* Footer */
@@ -672,14 +645,46 @@
             color: var(--accent-orange);
         }
 
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        .floating-whatsapp svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 1024px) {
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-
+            
             .footer-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .value-props {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -736,23 +741,19 @@
                 font-size: 32px;
             }
 
-            .hero-tagline {
-                font-size: 22px;
-            }
-
-            .hero-subtagline {
-                font-size: 18px;
-            }
-
             .hero p {
                 font-size: 16px;
             }
 
-            .features-grid {
-                grid-template-columns: 1fr;
+            .section {
+                padding: 60px 0;
             }
 
-            .grid-4 {
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .features-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -777,70 +778,6 @@
                 flex-direction: column;
                 gap: 16px;
             }
-
-            section {
-                padding: 60px 0;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate {
-            animation: fadeInUp 0.6s ease forwards;
-        }
-
-        /* Form Success Message */
-        .form-success {
-            display: none;
-            background: #27ae60;
-            color: var(--white);
-            padding: 16px;
-            border-radius: 6px;
-            text-align: center;
-            margin-top: 16px;
-        }
-
-        .form-success.show {
-            display: block;
-            animation: fadeInUp 0.3s ease;
-        }
-
-        /* Floating WhatsApp Button */
-        .floating-whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: #25d366;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .floating-whatsapp:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
-        }
-
-        .floating-whatsapp svg {
-            width: 30px;
-            height: 30px;
-            fill: white;
         }
     </style>
 </head>
@@ -868,7 +805,7 @@
             
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active" data-page="index.html">Home</a></li>
+                    <li><a href="index.html" class="nav-link" data-page="index.html">Home</a></li>
                     <li class="nav-dropdown">
                         <a href="chillers.html" class="nav-link nav-dropdown-toggle">
                             Chiller Trailers
@@ -890,7 +827,7 @@
                         </ul>
                     </li>
                     <li><a href="about.html" class="nav-link" data-page="about.html">About Us</a></li>
-                    <li><a href="why-buy.html" class="nav-link" data-page="why-buy.html">Why Buy</a></li>
+                    <li><a href="why-buy.html" class="nav-link active" data-page="why-buy.html">Why Buy</a></li>
                     <li><a href="contact.html" class="nav-link" data-page="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -900,261 +837,133 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>
-                <span class="hero-tagline">Built to Last. Trusted to Deliver.</span>
-                <span class="hero-subtagline">Strong, Reliable, Insulated.</span>
-            </h1>
-            <p>We provide long-lasting, high-quality cooling trailers designed to perform under all South African conditions, and stand the test of time.</p>
-            <p>When you choose Apex Trailers, you choose strength, reliability, and results.</p>
-            <div class="hero-location">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                Midrand, Gauteng, South Africa
-            </div>
-            <div class="hero-buttons">
-                <a href="chillers.html" class="btn btn-primary btn-lg">View Chiller Trailers</a>
-                <a href="freezers.html" class="btn btn-secondary btn-lg">View Freezer Trailers</a>
-            </div>
+            <h1>Why Choose Apex Trailers?</h1>
+            <p>Making the right investment in mobile cooling solutions for your business</p>
         </div>
     </section>
 
-    <!-- Featured Products Section -->
+    <!-- Main Content Section -->
     <section class="section">
         <div class="container">
             <div class="section-title">
-                <h2>Our Product Range</h2>
-                <p>Choose from our comprehensive range of refrigerated trailers, designed to meet the diverse needs of businesses across Gauteng and beyond.</p>
+                <h2>Buying a Refrigerated Trailer</h2>
+                <p>Making an informed decision for your business investment</p>
             </div>
             
-            <div class="grid grid-4">
-                <!-- Single Axle Chiller -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
-                        </svg>
-                        <span class="product-badge">Chiller</span>
-                    </div>
-                    <div class="product-content">
-                        <h3>Single Axle Chiller</h3>
-                        <span class="product-dimensions">2.4m × 1.5m × 1.8m</span>
-                        <div class="product-price">R62,000 <span>inc. VAT</span></div>
-                        <ul class="product-features">
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Temperature: 5°C to 0°C
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Stainless Steel Floor
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Aluminum Framework
-                            </li>
-                        </ul>
-                        <a href="single-axle-chiller.html" class="btn btn-outline btn-sm" style="width: 100%;">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Double Axle Chiller -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
-                        </svg>
-                        <span class="product-badge">Chiller</span>
-                    </div>
-                    <div class="product-content">
-                        <h3>Double Axle Chiller</h3>
-                        <span class="product-dimensions">2.4m × 1.5m × 1.8m</span>
-                        <div class="product-price">R72,000 <span>inc. VAT</span></div>
-                        <ul class="product-features">
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Temperature: 5°C to 0°C
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Enhanced Stability
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Higher Load Capacity
-                            </li>
-                        </ul>
-                        <a href="double-axle-chiller.html" class="btn btn-outline btn-sm" style="width: 100%;">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Single Axle Freezer -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
-                        </svg>
-                        <span class="product-badge">Freezer</span>
-                    </div>
-                    <div class="product-content">
-                        <h3>Single Axle Freezer</h3>
-                        <span class="product-dimensions">2.4m × 1.5m × 1.8m</span>
-                        <div class="product-price">R75,000 <span>inc. VAT</span></div>
-                        <ul class="product-features">
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Temperature: 0°C to -18°C
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Deep Freeze Capability
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Premium Insulation
-                            </li>
-                        </ul>
-                        <a href="single-axle-freezer.html" class="btn btn-outline btn-sm" style="width: 100%;">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Double Axle Freezer -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
-                        </svg>
-                        <span class="product-badge">Freezer</span>
-                    </div>
-                    <div class="product-content">
-                        <h3>Double Axle Freezer</h3>
-                        <span class="product-dimensions">2.4m × 1.5m × 1.8m</span>
-                        <div class="product-price">R89,000 <span>inc. VAT</span></div>
-                        <ul class="product-features">
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Temperature: 0°C to -18°C
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Maximum Capacity
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Heavy Load Design
-                            </li>
-                        </ul>
-                        <a href="double-axle-freezer.html" class="btn btn-outline btn-sm" style="width: 100%;">View Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Construction Standards Section -->
-    <section class="section" style="background: var(--ice-blue);">
-        <div class="container">
-            <div class="section-title">
-                <h2>Premium Construction Standards</h2>
-                <p>Every Apex Trailer is built to exacting specifications with the finest materials, ensuring durability and performance in South Africa's diverse climate conditions.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-                            <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
-                        </svg>
-                    </div>
-                    <h4>Stainless Steel Flooring</h4>
-                    <p>Premium grade stainless steel floor provides durability, easy cleaning, and corrosion resistance for long-term food safety compliance.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z"/>
-                        </svg>
-                    </div>
-                    <h4>Aluminum Framework</h4>
-                    <p>Rigid aluminum structured framework both inside and outside ensures lightweight strength and maximum thermal efficiency.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="5"/>
-                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                        </svg>
-                    </div>
-                    <h4>IP Rated Internal Light</h4>
-                    <p>Industrial-grade IP rated internal lighting ensures safe operation in cold, moist environments with consistent illumination.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H4V5h14v14zM6 13h5v4H6zm6-6h4v3h-4zM6 7h5v5H6zm6 4h4v6h-4z"/>
-                        </svg>
-                    </div>
-                    <h4>Generator Mounting Point</h4>
-                    <p>Dedicated mounting position for portable generator ensures reliable power supply for refrigeration units in any location.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/>
-                        </svg>
-                    </div>
-                    <h4>Spare Wheel Included</h4>
-                    <p>Every trailer comes complete with a spare wheel, ensuring you're never stranded during important deliveries or events.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M15 13V5c0-1.66-1.34-3-3-3S9 3.34 9 5v8c-1.21.91-2 2.37-2 4 0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.63-.79-3.09-2-4zm-4-8c0-.55.45-1 1-1s1 .45 1 1h-1v1h1v2h-1v1h1v2h-2V5z"/>
-                        </svg>
-                    </div>
-                    <h4>Digital Thermometer</h4>
-                    <p>Precision digital temperature monitoring system displays current temperature at a glance, ensuring optimal conditions for your cargo.</p>
-                </div>
+            <div class="content-block">
+                <h3>Understanding Your Investment</h3>
+                <p>Buying a refrigerated trailer can be a daunting task, there is many different factors to consider. Your mobile cooling unit must do its job by cooling consistently, as the products you will transport is at risk. It must be built to last, to ensure you get a return on your investment.</p>
+                
+                <p>At Apex Trailers, our specialization is refrigerated trailers. We have extensive knowledge when it comes to mobile cooling and each trailer undergoes a rigorous quality inspection during build, from the chassis to the final fitment of chiller units.</p>
+                
+                <p>There are no shortcuts taken, as we understand your money spent on this trailer is an investment which needs to yield profits and not losses and the only way to achieve this is providing a quality trailer which can serve you for many years.</p>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="section" style="background: linear-gradient(135deg, var(--primary-blue) 0%, #001f4d 100%); color: white;">
+    <section class="section section-dark">
         <div class="container">
             <div class="section-title">
-                <h2 style="color: white;">Why Choose Apex Trailers?</h2>
-                <p style="color: rgba(255,255,255,0.85);">We specialize exclusively in refrigerated trailers, understanding that your trailer is an investment that needs to deliver results for your business.</p>
+                <h2>The Apex Trailers Difference</h2>
+                <p>What sets our trailers apart and makes them the smart choice for your business</p>
             </div>
-            <div class="grid grid-3">
+            
+            <div class="features-grid">
                 <div class="feature-item">
                     <svg viewBox="0 0 24 24">
-                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                     </svg>
                     <h4>Rigorous Quality Control</h4>
                     <p>Every trailer undergoes comprehensive quality inspection from chassis build to final chiller unit fitment. No shortcuts, just premium quality.</p>
                 </div>
                 <div class="feature-item">
                     <svg viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
                     </svg>
-                    <h4>Refrigeration Specialists</h4>
-                    <p>We focus exclusively on refrigerated trailers. This specialization means we understand the unique demands of mobile cooling solutions.</p>
+                    <h4>Premium Materials</h4>
+                    <p>We use only the finest materials including stainless steel flooring, aluminum framework, and industrial-grade components for lasting durability.</p>
+                </div>
+                <div class="feature-item">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        <circle cx="12" cy="12" r="5"/>
+                    </svg>
+                    <h4>Expert Knowledge</h4>
+                    <p>Our team specializes exclusively in refrigerated trailers, bringing years of experience and technical expertise to every build.</p>
                 </div>
                 <div class="feature-item">
                     <svg viewBox="0 0 24 24">
                         <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
                     </svg>
                     <h4>Built for Profit</h4>
-                    <p>Every trailer is built to yield returns on your investment. Reliable cooling performance means your business keeps running smoothly.</p>
+                    <p>Every trailer is designed to deliver returns on your investment. Reliable cooling performance means your business keeps running smoothly.</p>
+                </div>
+                <div class="feature-item">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                        <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
+                    </svg>
+                    <h4>South African Tough</h4>
+                    <p>Our trailers are specifically designed and built to withstand South Africa's diverse climate conditions and demanding roads.</p>
+                </div>
+                <div class="feature-item">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                    </svg>
+                    <h4>Lasting Value</h4>
+                    <p>We focus on long-term value rather than quick sales. Your trailer is built to serve your business for many years to come.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Commitment Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Commitment to You</h2>
+                <p>Building trailers that businesses can rely on</p>
+            </div>
+            
+            <div class="value-props">
+                <div class="value-prop">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Quality Without Compromise
+                    </h3>
+                    <p>Every component of our trailers is carefully selected and inspected. From the chassis to the refrigeration unit, we ensure nothing less than excellence.</p>
+                </div>
+                <div class="value-prop">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        Expert Guidance
+                    </h3>
+                    <p>Our team understands the unique requirements of mobile cooling. We help you choose the right trailer for your specific business needs.</p>
+                </div>
+                <div class="value-prop">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                        Transparent Pricing
+                    </h3>
+                    <p>We believe in fair, transparent pricing that reflects the quality of our products. No hidden fees or unexpected costs.</p>
+                </div>
+                <div class="value-prop">
+                    <h3>
+                        <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                        Local Manufacturing
+                    </h3>
+                    <p>Built right here in Midrand, Gauteng, supporting local industry while ensuring quick access to parts and service.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="section cta-section">
+    <section class="cta-section">
         <div class="container">
-            <h2>Ready to Get Your Refrigerated Trailer?</h2>
-            <p>Contact our team today for personalized advice and competitive pricing on our complete range of chiller and freezer trailers.</p>
+            <h2>Ready to Make the Right Investment?</h2>
+            <p>Contact our team today for personalized advice on choosing the perfect refrigerated trailer for your business.</p>
             <a href="tel:+27611933931" class="btn btn-primary btn-lg">Call Now</a>
         </div>
     </section>
@@ -1277,46 +1086,6 @@
                 });
             });
         }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
-            });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe animated elements
-        document.querySelectorAll('.animate').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
-        });
     </script>
 </body>
 </html>

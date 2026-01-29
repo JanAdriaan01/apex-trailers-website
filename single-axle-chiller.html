@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apex Trailers - Premium Mobile Cooling Trailers in Midrand, Gauteng. Built to Last. Trusted to Deliver. Strong, Reliable, Insulated.">
-    <title>Apex Trailers | Mobile Cooling Trailers - Built to Last</title>
+    <meta name="description" content="Apex Trailers Single Axle Chiller Trailer - R62,000. Premium refrigerated chiller with stainless steel flooring, aluminum framework, 2.4m x 1.5m x 1.8m dimensions.">
+    <title>Single Axle Chiller Trailer | R62,000 | Apex Trailers</title>
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,10 +18,10 @@
         }
 
         :root {
-            --primary-blue: #003366;
-            --secondary-blue: #004d99;
-            --accent-blue: #0066cc;
-            --ice-blue: #e8f4fc;
+            --primary-blue: #0d4f6e;
+            --secondary-blue: #167295;
+            --accent-blue: #1e8ab8;
+            --ice-blue: #eef5f7;
             --text-dark: #1a1a1a;
             --text-medium: #4a5568;
             --white: #ffffff;
@@ -204,6 +203,11 @@
             color: var(--primary-blue);
         }
 
+        .nav-dropdown-menu li a.active {
+            background: var(--ice-blue);
+            color: var(--primary-blue);
+        }
+
         .btn {
             display: inline-flex;
             align-items: center;
@@ -259,15 +263,15 @@
             font-size: 16px;
         }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, #002855 100%);
-            padding: 100px 0;
+        /* Product Hero */
+        .product-hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            padding: 80px 0;
             position: relative;
             overflow: hidden;
         }
 
-        .hero::before {
+        .product-hero::before {
             content: '';
             position: absolute;
             top: 0;
@@ -277,64 +281,86 @@
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect fill="rgba(255,255,255,0.03)" width="800" height="600"/></svg>') center/cover;
         }
 
-        .hero .container {
+        .product-hero .container {
             position: relative;
             z-index: 1;
-            max-width: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
         }
 
-        .hero h1 {
-            font-size: 52px;
-            color: var(--white);
-            margin-bottom: 24px;
-            line-height: 1.2;
+        .product-hero-text {
+            max-width: 550px;
         }
 
-        .hero-tagline {
-            font-size: 28px;
-            color: var(--accent-orange);
-            font-weight: 700;
-            margin-bottom: 16px;
-            display: block;
-        }
-
-        .hero-subtagline {
-            font-size: 20px;
-            color: rgba(255,255,255,0.9);
-            font-weight: 600;
-            margin-bottom: 24px;
-            display: block;
-        }
-
-        .hero p {
-            font-size: 18px;
-            color: rgba(255,255,255,0.85);
-            margin-bottom: 16px;
-            line-height: 1.8;
-        }
-
-        .hero-location {
-            display: inline-flex;
+        .breadcrumb {
+            display: flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255,255,255,0.15);
+            font-size: 14px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb a {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .breadcrumb a:hover {
             color: var(--white);
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 15px;
-            margin-bottom: 32px;
         }
 
-        .hero-location svg {
-            width: 20px;
-            height: 20px;
-            fill: var(--accent-orange);
+        .breadcrumb span {
+            opacity: 0.7;
         }
 
-        .hero-buttons {
+        .product-hero h1 {
+            font-size: 36px;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+
+        .product-hero .description {
+            font-size: 16px;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 24px;
+        }
+
+        .product-hero .price {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-orange);
+            margin-bottom: 24px;
+        }
+
+        .product-hero .price span {
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .product-hero-image {
+            flex-shrink: 0;
+        }
+
+        .placeholder {
+            width: 400px;
+            height: 300px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 16px;
             display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .placeholder svg {
+            width: 120px;
+            height: 120px;
+            fill: rgba(255,255,255,0.4);
+            margin-bottom: 16px;
         }
 
         /* Section Styles */
@@ -348,7 +374,7 @@
         }
 
         .section-title h2 {
-            font-size: 36px;
+            font-size: 32px;
             color: var(--primary-blue);
             margin-bottom: 16px;
         }
@@ -359,8 +385,70 @@
             margin: 0 auto;
         }
 
+        /* Specs Grid */
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .spec-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .spec-card h4 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+            color: var(--primary-blue);
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--ice-blue);
+        }
+
+        .spec-card h4 svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--primary-blue);
+        }
+
+        .spec-card ul {
+            list-style: none;
+        }
+
+        .spec-card li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--ice-blue);
+            font-size: 14px;
+        }
+
+        .spec-card li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-card li span:first-child {
+            color: var(--text-medium);
+        }
+
+        .spec-card li span:last-child {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
         /* Features Section */
         .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .features-grid-3 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
@@ -408,108 +496,6 @@
             color: var(--text-medium);
         }
 
-        /* Product Grid */
-        .grid {
-            display: grid;
-            gap: 30px;
-        }
-
-        .grid-4 {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .product-card {
-            background: var(--white);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--shadow-md);
-            transition: var(--transition);
-        }
-
-        .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .product-image {
-            height: 220px;
-            background: linear-gradient(135deg, var(--ice-blue) 0%, #d4e9f7 100%);
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .product-image svg {
-            width: 140px;
-            height: 100px;
-            opacity: 0.4;
-        }
-
-        .product-badge {
-            position: absolute;
-            top: 16px;
-            left: 16px;
-            background: var(--accent-orange);
-            color: var(--white);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .product-content {
-            padding: 24px;
-        }
-
-        .product-content h3 {
-            font-size: 20px;
-            color: var(--text-dark);
-            margin-bottom: 8px;
-        }
-
-        .product-dimensions {
-            font-size: 13px;
-            color: var(--text-medium);
-            display: block;
-            margin-bottom: 12px;
-        }
-
-        .product-price {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary-blue);
-            margin-bottom: 16px;
-        }
-
-        .product-price span {
-            font-size: 14px;
-            font-weight: 400;
-            color: var(--text-medium);
-        }
-
-        .product-features {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .product-features li {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--text-medium);
-            font-size: 14px;
-            margin-bottom: 8px;
-        }
-
-        .product-features li svg {
-            width: 18px;
-            height: 18px;
-            fill: var(--primary-blue);
-            flex-shrink: 0;
-        }
-
-        /* Feature Items */
         .feature-item {
             text-align: center;
             padding: 24px;
@@ -518,19 +504,19 @@
         .feature-item svg {
             width: 48px;
             height: 48px;
-            fill: rgba(255,255,255,0.8);
+            fill: var(--primary-blue);
             margin-bottom: 16px;
         }
 
         .feature-item h4 {
             font-size: 18px;
-            color: var(--white);
+            color: var(--text-dark);
             margin-bottom: 10px;
         }
 
         .feature-item p {
             font-size: 14px;
-            color: rgba(255,255,255,0.8);
+            color: var(--text-medium);
         }
 
         /* CTA Section */
@@ -672,9 +658,34 @@
             color: var(--accent-orange);
         }
 
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #20b557;
+            transform: scale(1.1);
+        }
+
         /* Mobile Responsive */
         @media (max-width: 1024px) {
-            .features-grid {
+            .features-grid, .features-grid-3 {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -728,31 +739,34 @@
                 display: block;
             }
 
-            .hero {
+            .product-hero {
                 padding: 60px 0;
             }
 
-            .hero h1 {
-                font-size: 32px;
+            .product-hero .container {
+                flex-direction: column;
+                text-align: center;
             }
 
-            .hero-tagline {
-                font-size: 22px;
+            .product-hero h1 {
+                font-size: 28px;
             }
 
-            .hero-subtagline {
-                font-size: 18px;
+            .product-hero .price {
+                font-size: 28px;
             }
 
-            .hero p {
-                font-size: 16px;
+            .placeholder {
+                width: 100%;
+                max-width: 400px;
+                height: 250px;
             }
 
-            .features-grid {
+            .features-grid, .features-grid-3 {
                 grid-template-columns: 1fr;
             }
 
-            .grid-4 {
+            .specs-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -782,66 +796,6 @@
                 padding: 60px 0;
             }
         }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate {
-            animation: fadeInUp 0.6s ease forwards;
-        }
-
-        /* Form Success Message */
-        .form-success {
-            display: none;
-            background: #27ae60;
-            color: var(--white);
-            padding: 16px;
-            border-radius: 6px;
-            text-align: center;
-            margin-top: 16px;
-        }
-
-        .form-success.show {
-            display: block;
-            animation: fadeInUp 0.3s ease;
-        }
-
-        /* Floating WhatsApp Button */
-        .floating-whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: #25d366;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .floating-whatsapp:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
-        }
-
-        .floating-whatsapp svg {
-            width: 30px;
-            height: 30px;
-            fill: white;
-        }
     </style>
 </head>
 <body>
@@ -868,14 +822,14 @@
             
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active" data-page="index.html">Home</a></li>
+                    <li><a href="index.html" class="nav-link" data-page="index.html">Home</a></li>
                     <li class="nav-dropdown">
-                        <a href="chillers.html" class="nav-link nav-dropdown-toggle">
+                        <a href="chillers.html" class="nav-link nav-dropdown-toggle active">
                             Chiller Trailers
                             <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
                         </a>
                         <ul class="nav-dropdown-menu">
-                            <li><a href="single-axle-chiller.html">Single Axle Chiller</a></li>
+                            <li><a href="single-axle-chiller.html" class="active">Single Axle Chiller</a></li>
                             <li><a href="double-axle-chiller.html">Double Axle Chiller</a></li>
                         </ul>
                     </li>
@@ -890,182 +844,130 @@
                         </ul>
                     </li>
                     <li><a href="about.html" class="nav-link" data-page="about.html">About Us</a></li>
-                    <li><a href="why-buy.html" class="nav-link" data-page="why-buy.html">Why Buy</a></li>
                     <li><a href="contact.html" class="nav-link" data-page="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Product Hero -->
+    <section class="product-hero">
         <div class="container">
-            <h1>
-                <span class="hero-tagline">Built to Last. Trusted to Deliver.</span>
-                <span class="hero-subtagline">Strong, Reliable, Insulated.</span>
-            </h1>
-            <p>We provide long-lasting, high-quality cooling trailers designed to perform under all South African conditions, and stand the test of time.</p>
-            <p>When you choose Apex Trailers, you choose strength, reliability, and results.</p>
-            <div class="hero-location">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                Midrand, Gauteng, South Africa
-            </div>
-            <div class="hero-buttons">
-                <a href="chillers.html" class="btn btn-primary btn-lg">View Chiller Trailers</a>
-                <a href="freezers.html" class="btn btn-secondary btn-lg">View Freezer Trailers</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Product Range</h2>
-                <p>Choose from our comprehensive range of refrigerated trailers, designed to meet the diverse needs of businesses across Gauteng and beyond.</p>
-            </div>
-            
-            <div class="grid grid-4">
-                <!-- Single Axle Chiller -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
-                        </svg>
-                        <span class="product-badge">Chiller</span>
+            <div class="product-hero-content">
+                <div class="product-hero-text">
+                    <div class="breadcrumb" style="margin-bottom: 20px;">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <a href="chillers.html">Chillers</a>
+                        <span>/</span>
+                        <span>Single Axle</span>
                     </div>
-                    <div class="product-content">
-                        <h3>Single Axle Chiller</h3>
-                        <span class="product-dimensions">2.4m × 1.5m × 1.8m</span>
-                        <div class="product-price">R62,000 <span>inc. VAT</span></div>
-                        <ul class="product-features">
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Temperature: 5°C to 0°C
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Stainless Steel Floor
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Aluminum Framework
-                            </li>
-                        </ul>
-                        <a href="single-axle-chiller.html" class="btn btn-outline btn-sm" style="width: 100%;">View Details</a>
+                    <h1>Single Axle Chiller Trailer</h1>
+                    <p class="description">Professional-grade refrigerated chiller trailer perfect for businesses requiring reliable cold chain transport. Compact yet spacious design with all premium features included.</p>
+                    <div class="price">R62,000 <span>incl. VAT</span></div>
+                    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                        <a href="tel:+27611933931" class="btn btn-primary btn-lg">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            Call Now
+                        </a>
+                        <a href="tel:+27611933931" class="btn btn-secondary btn-lg">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            Call Now
+                        </a>
                     </div>
                 </div>
-
-                <!-- Double Axle Chiller -->
-                <div class="product-card">
-                    <div class="product-image">
+                <div class="product-hero-image">
+                    <div class="placeholder">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
                         </svg>
-                        <span class="product-badge">Chiller</span>
-                    </div>
-                    <div class="product-content">
-                        <h3>Double Axle Chiller</h3>
-                        <span class="product-dimensions">2.4m × 1.5m × 1.8m</span>
-                        <div class="product-price">R72,000 <span>inc. VAT</span></div>
-                        <ul class="product-features">
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Temperature: 5°C to 0°C
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Enhanced Stability
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Higher Load Capacity
-                            </li>
-                        </ul>
-                        <a href="double-axle-chiller.html" class="btn btn-outline btn-sm" style="width: 100%;">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Single Axle Freezer -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
-                        </svg>
-                        <span class="product-badge">Freezer</span>
-                    </div>
-                    <div class="product-content">
-                        <h3>Single Axle Freezer</h3>
-                        <span class="product-dimensions">2.4m × 1.5m × 1.8m</span>
-                        <div class="product-price">R75,000 <span>inc. VAT</span></div>
-                        <ul class="product-features">
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Temperature: 0°C to -18°C
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Deep Freeze Capability
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Premium Insulation
-                            </li>
-                        </ul>
-                        <a href="single-axle-freezer.html" class="btn btn-outline btn-sm" style="width: 100%;">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Double Axle Freezer -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
-                        </svg>
-                        <span class="product-badge">Freezer</span>
-                    </div>
-                    <div class="product-content">
-                        <h3>Double Axle Freezer</h3>
-                        <span class="product-dimensions">2.4m × 1.5m × 1.8m</span>
-                        <div class="product-price">R89,000 <span>inc. VAT</span></div>
-                        <ul class="product-features">
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Temperature: 0°C to -18°C
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Maximum Capacity
-                            </li>
-                            <li>
-                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Heavy Load Design
-                            </li>
-                        </ul>
-                        <a href="double-axle-freezer.html" class="btn btn-outline btn-sm" style="width: 100%;">View Details</a>
+                        Single Axle Chiller
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Construction Standards Section -->
-    <section class="section" style="background: var(--ice-blue);">
+    <!-- Specifications Section -->
+    <section class="section specs-section">
         <div class="container">
             <div class="section-title">
-                <h2>Premium Construction Standards</h2>
-                <p>Every Apex Trailer is built to exacting specifications with the finest materials, ensuring durability and performance in South Africa's diverse climate conditions.</p>
+                <h2>Technical Specifications</h2>
+                <p>Detailed specifications for the Single Axle Chiller Trailer</p>
             </div>
-            <div class="features-grid">
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h4>
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+                        Dimensions
+                    </h4>
+                    <ul>
+                        <li><span>Length</span><span>2.4 meters</span></li>
+                        <li><span>Width</span><span>1.5 meters</span></li>
+                        <li><span>Height</span><span>1.8 meters</span></li>
+                        <li><span>Internal Volume</span><span>~6.5 m³</span></li>
+                        <li><span>Axle Type</span><span>Single</span></li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h4>
+                        <svg viewBox="0 0 24 24"><path d="M15 13V5c0-1.66-1.34-3-3-3S9 3.34 9 5v8c-1.21.91-2 2.37-2 4 0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.63-.79-3.09-2-4zm-4-8c0-.55.45-1 1-1s1 .45 1 1h-1v1h1v2h-1v1h1v2h-2V5z"/></svg>
+                        Temperature
+                    </h4>
+                    <ul>
+                        <li><span>Temperature Range</span><span>5°C to 0°C</span></li>
+                        <li><span>Refrigerant</span><span>R-134a</span></li>
+                        <li><span>Compressor</span><span>Heavy Duty</span></li>
+                        <li><span>Thermostat</span><span>Digital</span></li>
+                        <li><span>Cool Down Time</span><span>~30 min</span></li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h4>
+                        <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                        Chassis & Running Gear
+                    </h4>
+                    <ul>
+                        <li><span>Axle</span><span>Single Spring</span></li>
+                        <li><span>Brakes</span><span>Override Coupler</span></li>
+                        <li><span>Tires</span><span>185R14C</span></li>
+                        <li><span>Rims</span><span>14" Steel</span></li>
+                        <li><span>Spare Wheel</span><span>Included</span></li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h4>
+                        <svg viewBox="0 0 24 24"><path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2z"/></svg>
+                        Construction
+                    </h4>
+                    <ul>
+                        <li><span>Floor</span><span>Stainless Steel</span></li>
+                        <li><span>Framework</span><span>Aluminum</span></li>
+                        <li><span>Walls</span><span>Aluminum Clad</span></li>
+                        <li><span>Roof</span><span>Fiberglass</span></li>
+                        <li><span>Door</span><span>Rear Roll-up</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standard Features Section -->
+    <section class="section features-section" style="background: var(--ice-blue);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Standard Features</h2>
+                <p>Every Apex Trailer comes equipped with premium features as standard</p>
+            </div>
+            <div class="features-grid-3">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24">
                             <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-                            <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
                         </svg>
                     </div>
                     <h4>Stainless Steel Flooring</h4>
-                    <p>Premium grade stainless steel floor provides durability, easy cleaning, and corrosion resistance for long-term food safety compliance.</p>
+                    <p>Premium grade 304 stainless steel floor provides durability, corrosion resistance, and easy cleaning for food safety compliance.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -1089,11 +991,11 @@
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24">
-                            <path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H4V5h14v14zM6 13h5v4H6zm6-6h4v3h-4zM6 7h5v5H6zm6 4h4v6h-4z"/>
+                            <path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2z"/>
                         </svg>
                     </div>
                     <h4>Generator Mounting Point</h4>
-                    <p>Dedicated mounting position for portable generator ensures reliable power supply for refrigeration units in any location.</p>
+                    <p>Dedicated mounting position for portable generator ensures reliable power supply for refrigeration units at any location.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -1101,8 +1003,8 @@
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/>
                         </svg>
                     </div>
-                    <h4>Spare Wheel Included</h4>
-                    <p>Every trailer comes complete with a spare wheel, ensuring you're never stranded during important deliveries or events.</p>
+                    <h4>Spare Wheel</h4>
+                    <p>Every trailer comes complete with a spare wheel, ensuring you're never stranded during important deliveries.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -1111,51 +1013,122 @@
                         </svg>
                     </div>
                     <h4>Digital Thermometer</h4>
-                    <p>Precision digital temperature monitoring system displays current temperature at a glance, ensuring optimal conditions for your cargo.</p>
+                    <p>Precision digital temperature monitoring system displays current temperature at a glance for cargo safety.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="section" style="background: linear-gradient(135deg, var(--primary-blue) 0%, #001f4d 100%); color: white;">
+    <!-- Ideal For Section -->
+    <section class="section">
         <div class="container">
             <div class="section-title">
-                <h2 style="color: white;">Why Choose Apex Trailers?</h2>
-                <p style="color: rgba(255,255,255,0.85);">We specialize exclusively in refrigerated trailers, understanding that your trailer is an investment that needs to deliver results for your business.</p>
+                <h2>Ideal Applications</h2>
+                <p>The Single Axle Chiller Trailer is perfect for these business applications</p>
             </div>
-            <div class="grid grid-3">
-                <div class="feature-item">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-                    </svg>
-                    <h4>Rigorous Quality Control</h4>
-                    <p>Every trailer undergoes comprehensive quality inspection from chassis build to final chiller unit fitment. No shortcuts, just premium quality.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h4>Event Catering</h4>
+                    <p>Perfect for catering companies needing to keep food fresh at outdoor events, weddings, and corporate functions.</p>
                 </div>
-                <div class="feature-item">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    <h4>Refrigeration Specialists</h4>
-                    <p>We focus exclusively on refrigerated trailers. This specialization means we understand the unique demands of mobile cooling solutions.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h4>Fresh Produce Delivery</h4>
+                    <p>Ideal for farms and distributors transporting fruits, vegetables, and other perishable goods to markets.</p>
                 </div>
-                <div class="feature-item">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-                    </svg>
-                    <h4>Built for Profit</h4>
-                    <p>Every trailer is built to yield returns on your investment. Reliable cooling performance means your business keeps running smoothly.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h4>Pharmaceutical Transport</h4>
+                    <p>Suitable for transporting temperature-sensitive medications and medical supplies requiring 2-8°C storage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h4>Floral Industry</h4>
+                    <p>Excellent for florists and flower nurseries keeping cut flowers fresh during transport and events.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h4>Restaurant Supply</h4>
+                    <p>Ideal for restaurants and cafes requiring regular deliveries of fresh ingredients and prepared foods.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h4>Mobile Sales</h4>
+                    <p>Perfect for ice cream trucks, beverage vendors, and mobile food businesses needing reliable cooling.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Pricing & CTA Section -->
     <section class="section cta-section">
         <div class="container">
-            <h2>Ready to Get Your Refrigerated Trailer?</h2>
-            <p>Contact our team today for personalized advice and competitive pricing on our complete range of chiller and freezer trailers.</p>
-            <a href="tel:+27611933931" class="btn btn-primary btn-lg">Call Now</a>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2>Single Axle Chiller Trailer</h2>
+                <p style="font-size: 1.25rem; margin-bottom: 30px; color: var(--text-medium);">Professional refrigerated chiller with all premium features included</p>
+                
+                <div style="background: white; border-radius: 20px; padding: 40px; box-shadow: var(--shadow-md); margin-bottom: 40px;">
+                    <div style="display: flex; justify-content: center; align-items: baseline; gap: 10px; margin-bottom: 30px;">
+                        <span style="font-size: 3rem; font-weight: 700; color: var(--primary-blue);">R62,000</span>
+                        <span style="color: var(--text-medium);">incl. VAT</span>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; text-align: left;">
+                        <div style="padding: 20px; background: var(--ice-blue); border-radius: 12px;">
+                            <strong style="display: block; color: var(--primary-blue); margin-bottom: 8px;">Dimensions</strong>
+                            <span style="color: var(--text-medium);">2.4m × 1.5m × 1.8m</span>
+                        </div>
+                        <div style="padding: 20px; background: var(--ice-blue); border-radius: 12px;">
+                            <strong style="display: block; color: var(--primary-blue); margin-bottom: 8px;">Temperature</strong>
+                            <span style="color: var(--text-medium);">5°C to 0°C</span>
+                        </div>
+                        <div style="padding: 20px; background: var(--ice-blue); border-radius: 12px;">
+                            <strong style="display: block; color: var(--primary-blue); margin-bottom: 8px;">Axle</strong>
+                            <span style="color: var(--text-medium);">Single</span>
+                        </div>
+                        <div style="padding: 20px; background: var(--ice-blue); border-radius: 12px;">
+                            <strong style="display: block; color: var(--primary-blue); margin-bottom: 8px;">Lead Time</strong>
+                            <span style="color: var(--text-medium);">2-3 Weeks</span>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                        <a href="tel:+27611933931" class="btn btn-primary btn-lg">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            Call Now
+                        </a>
+                        <a href="tel:+27611933931" class="btn btn-secondary btn-lg">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1202,7 +1175,6 @@
                     <h4>Company</h4>
                     <ul class="footer-links">
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="why-buy.html">Why Buy</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
@@ -1236,12 +1208,11 @@
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/27611933931" class="floating-whatsapp" target="_blank" aria-label="Contact us on WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-    </a>
+    <a href="https://wa.me/27611933931" class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
 
     <script>
         // Mobile Menu Toggle
@@ -1293,29 +1264,6 @@
                     }
                 }
             });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe animated elements
-        document.querySelectorAll('.animate').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
         });
     </script>
 </body>
