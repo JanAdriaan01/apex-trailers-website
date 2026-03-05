@@ -4,15 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Apex Trailers | Trailer Hire & Sales Johannesburg</title>
-<meta name="description" content="Apex Trailers in Johannesburg. Professional trailer rentals and new trailer sales. Reliable, industrial, and affordable.">
+<title>Apex Trailers | Trailer Hire Midrand Gauteng</title>
+<meta name="description" content="Heavy duty trailer hire in Midrand Gauteng. Reliable daily trailer rentals including single axle, double axle, car trailers and chiller trailers.">
 
 <link rel="stylesheet" href="css/style.css">
 
+<!-- Local Business Schema -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "@id": "https://apextrailers.co.za",
+ "name": "Apex Trailers",
+ "url": "https://apextrailers.co.za",
+ "telephone": "+27-11-123-4567",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "69 State Rd, President Park AH",
+   "addressLocality": "Midrand",
+   "addressRegion": "Gauteng",
+   "postalCode": "1684",
+   "addressCountry": "ZA"
+ },
+ "areaServed": {
+   "@type": "AdministrativeArea",
+   "name": "Gauteng"
+ },
+ "priceRange": "$$"
+}
+</script>
+
 <style>
-/* Home specific styling */
-.home-wrapper{
-min-height:80vh;
+body{
+background:#2E2B25;
+color:#E5E0D6;
+margin:0;
+font-family:Segoe UI, sans-serif;
+}
+header{
+background:#1F1D18;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:2px solid #C3B091;
+}
+header h1{color:#C3B091;margin:0;}
+nav a{
+color:#E5E0D6;
+margin-left:30px;
+text-decoration:none;
+font-weight:600;
+}
+.hero{
+min-height:85vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -20,105 +65,90 @@ align-items:center;
 text-align:center;
 padding:60px;
 }
-
-.home-wrapper h2{
-color:var(--deep);
-font-size:2rem;
-margin-bottom:15px;
+.hero h2{
+font-size:2.5rem;
+color:#C3B091;
+letter-spacing:2px;
 }
-
-.home-wrapper p{
-color:#555;
-margin-bottom:50px;
-}
-
 .choice-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:40px;
 max-width:900px;
 width:100%;
+margin-top:50px;
 }
-
 .choice-card{
-background:white;
+background:#1F1D18;
+border:2px solid #C3B091;
 padding:50px;
-border-radius:14px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-transition:0.3s;
 text-decoration:none;
-color:inherit;
+color:#E5E0D6;
+transition:0.3s;
 }
-
 .choice-card:hover{
-transform:translateY(-5px);
-box-shadow:0 14px 40px rgba(0,0,0,0.12);
+background:#C3B091;
+color:#1F1D18;
+transform:translateY(-6px);
 }
-
-.choice-card h3{
-margin-top:0;
-color:var(--deep);
+footer{
+background:#1F1D18;
+border-top:2px solid #C3B091;
+padding:40px;
+text-align:center;
 }
-
-.choice-card .btn{
-margin-top:25px;
-display:inline-block;
-padding:12px 25px;
-background:var(--dark);
-color:white;
-border-radius:6px;
-font-weight:600;
-}
-
-.choice-card:hover .btn{
-background:var(--deep);
-}
-
 @media(max-width:800px){
-.choice-grid{
-grid-template-columns:1fr;
-}
+.choice-grid{grid-template-columns:1fr;}
 }
 </style>
-
 </head>
 <body>
 
 <header>
-<h1>Apex Trailers</h1>
+<h1>APEX TRAILERS</h1>
 <nav>
-<a href="rentals.html">Trailer Rentals</a>
+<a href="rentals.html">Trailer Hire</a>
 <a href="sales.html">New Sales</a>
 </nav>
 </header>
 
-<div class="home-wrapper">
-
-<h2>Professional Trailer Solutions in Johannesburg</h2>
-<p>Commercial • Industrial • Domestic</p>
+<section class="hero">
+<h2>BUILT TO WORK</h2>
+<p>Heavy-duty trailer hire in Midrand and across Gauteng.</p>
 
 <div class="choice-grid">
-
 <a href="rentals.html" class="choice-card">
-<h3>Trailer Hire / Rental</h3>
-<p>Single axle, double axle, car trailers, chillers, livestock and more.</p>
-<div class="btn">View Rental Trailers</div>
+<h3>TRAILER HIRE / RENTAL</h3>
+<p>Industrial, commercial and domestic rental trailers.</p>
 </a>
 
 <a href="sales.html" class="choice-card">
-<h3>New Trailers & Accessories</h3>
-<p>Utility trailers, chiller trailers and commercial equipment for sale.</p>
-<div class="btn">View Trailers for Sale</div>
+<h3>NEW TRAILERS & ACCESSORIES</h3>
+<p>Utility trailers, chiller trailers and heavy builds.</p>
 </a>
-
 </div>
 
-</div>
+<p style="margin-top:60px;">
+Looking for <a href="trailer-hire-midrand.html" style="color:#C3B091;">trailer hire in Midrand</a>?  
+We provide daily rentals across Gauteng.
+</p>
+
+</section>
 
 <footer>
-<h3>Apex Trailers</h3>
-<p>123 Industrial Road, Randburg, Johannesburg</p>
-<p>Phone: 011 123 4567</p>
+<p>Apex Trailers • Serving Midrand & Gauteng</p>
+<p>011 123 4567</p>
+<h3>Find Us in Midrand</h3>
+
+<iframe
+src="https://www.google.com/maps?q=Apex+Trailers,+69+State+Rd,+President+Park+AH,+Midrand,+1684&output=embed"
+width="100%"
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
 </footer>
 
 </body>
