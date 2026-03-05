@@ -18,7 +18,7 @@
  "@id": "https://apextrailers.co.za",
  "name": "Apex Trailers",
  "url": "https://apextrailers.co.za",
- "telephone": "+27-11-123-4567",
+ "telephone": "+27-61-193-3931",
  "address": {
    "@type": "PostalAddress",
    "streetAddress": "69 State Rd, President Park AH",
@@ -35,7 +35,7 @@
 }
 </script>
 
-<!-- Review Schema (USE REAL NUMBERS ONLY) -->
+<!-- Review Schema -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -51,98 +51,100 @@
 
 <style>
 body{
-background:#2E2B25;
-color:#E5E0D6;
-margin:0;
-font-family:Segoe UI, sans-serif;
+  background:#2E2B25;
+  color:#E5E0D6;
+  margin:0;
+  font-family:Segoe UI, sans-serif;
 }
 header{
-background:#1F1D18;
-padding:20px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:2px solid #C3B091;
+  background:#1F1D18;
+  padding:20px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:2px solid #C3B091;
 }
 header h1{margin:0;color:#C3B091;}
 nav a{
-color:#E5E0D6;
-margin-left:30px;
-text-decoration:none;
-font-weight:600;
+  color:#E5E0D6;
+  margin-left:30px;
+  text-decoration:none;
+  font-weight:600;
 }
 nav a.active{
-color:#C3B091;
-border-bottom:2px solid #C3B091;
-padding-bottom:4px;
+  color:#C3B091;
+  border-bottom:2px solid #C3B091;
+  padding-bottom:4px;
 }
 .container{
-display:flex;
-padding:40px 60px;
-gap:40px;
+  display:flex;
+  padding:40px 60px;
+  gap:40px;
 }
 .sidebar{
-width:260px;
-background:#1F1D18;
-padding:25px;
-border:2px solid #C3B091;
+  width:260px;
+  background:#1F1D18;
+  padding:25px;
+  border:2px solid #C3B091;
 }
+.sidebar h3{color:#C3B091;margin-top:0;}
 .sidebar button{
-width:100%;
-padding:12px;
-margin-bottom:10px;
-background:#C3B091;
-border:none;
-cursor:pointer;
-font-weight:bold;
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  background:#C3B091;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
 }
 .main{flex:1;}
 .grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:35px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:35px;
 }
 .card{
-background:#1F1D18;
-border:2px solid #C3B091;
-display:flex;
-flex-direction:column;
+  background:#1F1D18;
+  border:2px solid #C3B091;
+  display:flex;
+  flex-direction:column;
 }
 .card img{
-width:100%;
-height:220px;
-object-fit:cover;
+  width:100%;
+  height:220px;
+  object-fit:cover;
 }
 .content{
-padding:20px;
-display:flex;
-flex-direction:column;
-flex:1;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
 }
+.content h3{margin:0 0 10px;}
 .price{font-weight:bold;margin:10px 0;}
 .whatsapp-btn{
-margin-top:auto;
-background:#25D366;
-color:white;
-text-align:center;
-padding:10px;
-text-decoration:none;
-font-weight:bold;
+  margin-top:auto;
+  background:#25D366;
+  color:white;
+  text-align:center;
+  padding:10px;
+  text-decoration:none;
+  font-weight:bold;
 }
 footer{
-background:#1F1D18;
-border-top:2px solid #C3B091;
-padding:40px;
-text-align:center;
-margin-top:60px;
+  background:#1F1D18;
+  border-top:2px solid #C3B091;
+  padding:40px;
+  text-align:center;
+  margin-top:60px;
 }
 @media(max-width:1100px){
-.grid{grid-template-columns:repeat(2,1fr);}
+  .grid{grid-template-columns:repeat(2,1fr);}
 }
 @media(max-width:800px){
-.container{flex-direction:column;}
-.sidebar{width:100%;}
-.grid{grid-template-columns:1fr;}
+  .container{flex-direction:column;}
+  .sidebar{width:100%;}
+  .grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -150,9 +152,7 @@ margin-top:60px;
 <body>
 
 <header>
-<a href="index.html" style="text-decoration:none;">
-<h1>APEX TRAILERS</h1>
-</a>
+<a href="index.html" style="text-decoration:none;"><h1>APEX TRAILERS</h1></a>
 <nav>
 <a href="index.html">Home</a>
 <a href="rentals.html" class="active">Trailer Hire</a>
@@ -198,10 +198,8 @@ We provide reliable <a href="trailer-hire-midrand.html" style="color:#C3B091;">t
 <h3>Frequently Asked Questions</h3>
 <h4>How much is trailer hire in Midrand?</h4>
 <p>Rental prices start from R345 per day depending on trailer type.</p>
-
 <h4>Do I need a deposit?</h4>
 <p>Yes, a refundable deposit applies to all rentals.</p>
-
 <h4>What areas do you serve?</h4>
 <p>We are based in Midrand and serve customers across Gauteng.</p>
 </section>
@@ -211,78 +209,63 @@ We provide reliable <a href="trailer-hire-midrand.html" style="color:#C3B091;">t
 
 <footer>
 <h3>Find Us in Midrand</h3>
-<iframe
-src="https://www.google.com/maps?q=Apex+Trailers,+69+State+Rd,+President+Park+AH,+Midrand,+1684&output=embed"
-width="100%"
-height="300"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
+<iframe src="https://www.google.com/maps?q=Apex+Trailers,+69+State+Rd,+President+Park+AH,+Midrand,+1684&output=embed"
+width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 <p>69 State Rd, President Park AH, Midrand, 1684</p>
-<p>0611933931</p>
+<p>061 193 3931</p>
 </footer>
 
 <script>
-
 const rentals = [
+{cat:"single",name:"1.8m Single Axle (500kg)",price:"R345 / Day",img:"images/rentals/single-axle/single-axle-1-8m-500kg-midrand.jpg"},
+{cat:"single",name:"2.0m Single Axle (500kg)",price:"R400 / Day",img:"images/rentals/single-axle/single-axle-2-0m-500kg-midrand.jpg"},
+{cat:"single",name:"2.4m Single Axle (500kg)",price:"R465 / Day",img:"images/rentals/single-axle/single-axle-2-4m-500kg-midrand.jpg"},
+{cat:"single",name:"2.6m Single Axle (500kg)",price:"R480 / Day",img:"images/rentals/single-axle/single-axle-2-6m-500kg-midrand.jpg"},
+{cat:"single",name:"3.0m Single Axle (500kg)",price:"R505 / Day",img:"images/rentals/single-axle/single-axle-3-0m-500kg-midrand.jpg"},
+{cat:"single",name:"3.0m Single Axle (1000kg)",price:"R535 / Day",img:"images/rentals/single-axle/single-axle-3-0m-1000kg-midrand.jpg"},
+{cat:"single",name:"3.2m Single Axle (1000kg)",price:"R535 / Day",img:"images/rentals/single-axle/single-axle-3-2m-1000kg-midrand.jpg"},
 
-{cat:"single",name:"1.8m Single Axle (500kg)",price:"R345 / Day",img:"images/rentals/single-axle-1-8m-500kg-midrand.jpg"},
-{cat:"single",name:"2.0m Single Axle (500kg)",price:"R400 / Day",img:"images/rentals/single-axle-2-0m-500kg-midrand.jpg"},
-{cat:"single",name:"2.4m Single Axle (500kg)",price:"R465 / Day",img:"images/rentals/single-axle-2-4m-500kg-midrand.jpg"},
-{cat:"single",name:"2.6m Single Axle (500kg)",price:"R480 / Day",img:"images/rentals/single-axle-2-6m-500kg-midrand.jpg"},
-{cat:"single",name:"3.0m Single Axle (500kg)",price:"R505 / Day",img:"images/rentals/single-axle-3-0m-500kg-midrand.jpg"},
-{cat:"single",name:"3.0m Single Axle (1000kg)",price:"R535 / Day",img:"images/rentals/single-axle-3-0m-1000kg-midrand.jpg"},
-{cat:"single",name:"3.2m Single Axle (1000kg)",price:"R535 / Day",img:"images/rentals/single-axle-3-2m-1000kg-midrand.jpg"},
+{cat:"double",name:"3.0m Double Axle (2500kg)",price:"R735 / Day",img:"images/rentals/double-axle/double-axle-3-0m-2500kg-midrand.jpg"},
+{cat:"double",name:"3.7m Double Axle (2500kg)",price:"R775 / Day",img:"images/rentals/double-axle/double-axle-3-7m-2500kg-midrand.jpg"},
+{cat:"double",name:"4.0m Double Axle (2500kg)",price:"R805 / Day",img:"images/rentals/double-axle/double-axle-4-0m-2500kg-midrand.jpg"},
 
-{cat:"double",name:"3.0m Double Axle (2500kg)",price:"R735 / Day",img:"images/rentals/double-axle-3-0m-2500kg-midrand.jpg"},
-{cat:"double",name:"3.7m Double Axle (2500kg)",price:"R775 / Day",img:"images/rentals/double-axle-3-7m-2500kg-midrand.jpg"},
-{cat:"double",name:"4.0m Double Axle (2500kg)",price:"R805 / Day",img:"images/rentals/double-axle-4-0m-2500kg-midrand.jpg"},
+{cat:"car",name:"Double Axle Car Trailer 5m",price:"R1,210 / Day",img:"images/rentals/car/double-axle-car-trailer-5m-midrand.jpg"},
+{cat:"car",name:"Single Axle Car Trailer 4.5m",price:"R940 / Day",img:"images/rentals/car/single-axle-car-trailer-4-5m-midrand.jpg"},
 
-{cat:"car",name:"Double Axle Car Trailer 5m",price:"R1,210 / Day",img:"images/rentals/car-trailer-double-axle-5m-midrand.jpg"},
-{cat:"car",name:"Single Axle Car Trailer 4.5m",price:"R940 / Day",img:"images/rentals/car-trailer-single-axle-4-5m-midrand.jpg"},
+{cat:"chiller",name:"Single Axle Chiller Trailer",price:"R700 / Day",img:"images/rentals/chiller/single-axle-chiller-trailer-midrand.jpg"},
+{cat:"chiller",name:"Double Axle Chiller Trailer",price:"R850 / Day",img:"images/rentals/chiller/double-axle-chiller-trailer-midrand.jpg"},
 
-{cat:"chiller",name:"Single Axle Chiller Trailer",price:"R700 / Day",img:"images/rentals/chiller-trailer-single-axle-midrand.jpg"},
-{cat:"chiller",name:"Double Axle Chiller Trailer",price:"R850 / Day",img:"images/rentals/chiller-trailer-double-axle-midrand.jpg"},
-
-{cat:"utility",name:"Dump Trailer",price:"R900 / Day",img:"images/rentals/dump-trailer-hydraulic-midrand.jpg"},
-{cat:"bowser",name:"Water Bowser",price:"R650 / Day",img:"images/rentals/water-bowser-trailer-midrand.jpg"},
-{cat:"bowser",name:"Diesel Bowser",price:"R750 / Day",img:"images/rentals/diesel-bowser-trailer-midrand.jpg"},
-{cat:"livestock",name:"Single Axle Livestock 2.5m",price:"R535 / Day",img:"images/rentals/livestock-trailer-single-axle-2-5m-midrand.jpg"}
-
+{cat:"utility",name:"Dump Trailer",price:"R900 / Day",img:"images/rentals/utility/dump-trailer-hydraulic-midrand.jpg"},
+{cat:"bowser",name:"Water Bowser",price:"R650 / Day",img:"images/rentals/bowser/water-bowser-trailer-midrand.jpg"},
+{cat:"bowser",name:"Diesel Bowser",price:"R750 / Day",img:"images/rentals/bowser/diesel-bowser-trailer-midrand.jpg"},
+{cat:"livestock",name:"Single Axle Livestock 2.5m",price:"R535 / Day",img:"images/rentals/livestock/single-axle-livestock-2-5m-midrand.jpg"}
 ];
 
 const grid=document.getElementById("productGrid");
 
 function renderProducts(data){
-grid.innerHTML="";
-data.forEach(item=>{
-const message=encodeURIComponent(
-`Hi Apex Trailers, I would like to book the following trailer:\n\n${item.name}\n\nPlease confirm availability and deposit details.`
-);
-grid.innerHTML+=`
-<div class="card" data-cat="${item.cat}">
-<img src="${item.img}" alt="${item.name} trailer hire in Midrand Gauteng" loading="lazy">
-<div class="content">
-<h3>${item.name}</h3>
-<div class="price">${item.price}</div>
-<a class="whatsapp-btn"
-href="https://wa.me/27611933931?text=${message}"
-target="_blank">Enquire on WhatsApp</a>
-</div>
-</div>`;
-});
+  grid.innerHTML="";
+  data.forEach(item=>{
+    const message=encodeURIComponent(`Hi Apex Trailers, I would like to book the following trailer:\n\n${item.name}\n\nPlease confirm availability and deposit details.`);
+    grid.innerHTML+=`
+    <div class="card" data-cat="${item.cat}">
+      <img src="${item.img}" alt="${item.name} trailer hire in Midrand Gauteng" loading="lazy">
+      <div class="content">
+        <h3>${item.name}</h3>
+        <div class="price">${item.price}</div>
+        <a class="whatsapp-btn" href="https://wa.me/27611933931?text=${message}" target="_blank">Enquire on WhatsApp</a>
+      </div>
+    </div>`;
+  });
 }
 
 function filterCategory(cat){
-document.querySelectorAll('.card').forEach(card=>{
-card.style.display=(cat==='all'||card.dataset.cat===cat)?'flex':'none';
-});
+  document.querySelectorAll('.card').forEach(card=>{
+    card.style.display=(cat==='all'||card.dataset.cat===cat)?'flex':'none';
+  });
 }
 
 renderProducts(rentals);
-
 </script>
 
 </body>
