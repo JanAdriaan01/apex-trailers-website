@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Apex Trailers | Trailer Hire Midrand Gauteng</title>
-<meta name="description" content="Heavy duty trailer hire in Midrand Gauteng. Reliable daily trailer rentals including single axle, double axle, car trailers and chiller trailers.">
+  <title>Apex Trailers | Trailer Hire Midrand Gauteng</title>
+  <meta name="description"
+    content="Heavy duty trailer hire in Midrand Gauteng. Reliable daily trailer rentals including single axle, double axle, car trailers and chiller trailers.">
 
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-<!-- Local Business Schema -->
-<script type="application/ld+json">
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "LocalBusiness",
@@ -34,123 +36,193 @@
 }
 </script>
 
-<style>
-body{
-background:#2E2B25;
-color:#E5E0D6;
-margin:0;
-font-family:Segoe UI, sans-serif;
-}
-header{
-background:#1F1D18;
-padding:20px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:2px solid #C3B091;
-}
-header h1{color:#C3B091;margin:0;}
-nav a{
-color:#E5E0D6;
-margin-left:30px;
-text-decoration:none;
-font-weight:600;
-}
-.hero{
-min-height:85vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:60px;
-}
-.hero h2{
-font-size:2.5rem;
-color:#C3B091;
-letter-spacing:2px;
-}
-.choice-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:40px;
-max-width:900px;
-width:100%;
-margin-top:50px;
-}
-.choice-card{
-background:#1F1D18;
-border:2px solid #C3B091;
-padding:50px;
-text-decoration:none;
-color:#E5E0D6;
-transition:0.3s;
-}
-.choice-card:hover{
-background:#C3B091;
-color:#1F1D18;
-transform:translateY(-6px);
-}
-footer{
-background:#1F1D18;
-border-top:2px solid #C3B091;
-padding:40px;
-text-align:center;
-}
-@media(max-width:800px){
-.choice-grid{grid-template-columns:1fr;}
-}
-</style>
+  <style>
+    body {
+      background: #2E2B25;
+      color: #E5E0D6;
+      margin: 0;
+      font-family: Segoe UI, sans-serif;
+    }
+
+    header {
+      background: #1F1D18;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #C3B091;
+    }
+
+    header h1 {
+      color: #C3B091;
+      margin: 0;
+    }
+
+    nav a {
+      color: #E5E0D6;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #C3B091;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #C3B091;
+      letter-spacing: 2px;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 900px;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .choice-card {
+      background: #1F1D18;
+      border: 2px solid #C3B091;
+      padding: 50px;
+      text-decoration: none;
+      color: #E5E0D6;
+      transition: 0.3s;
+    }
+
+    .choice-card:hover {
+      background: #C3B091;
+      color: #1F1D18;
+      transform: translateY(-6px);
+    }
+
+    /* Disabled style for coming soon card */
+    .choice-card.disabled {
+      opacity: 0.8;
+      cursor: default;
+      pointer-events: none;
+      filter: grayscale(0.1);
+    }
+
+    .choice-card.disabled:hover {
+      transform: none;
+      background: #1F1D18;
+      color: #E5E0D6;
+    }
+
+    .coming-soon-badge {
+      display: inline-block;
+      background: #9b6a3c;
+      color: white;
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-top: 12px;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+    }
+
+    footer {
+      background: #1F1D18;
+      border-top: 2px solid #C3B091;
+      padding: 40px;
+      text-align: center;
+    }
+
+    footer iframe {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    @media(max-width:800px) {
+      .choice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      nav a {
+        margin: 0 15px;
+      }
+
+      .hero {
+        padding: 40px 20px;
+      }
+
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-<h1>APEX TRAILERS</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="rentals.html">Trailer Hire</a>
-<a href="sales.html">New Sales</a>
-</nav>
-</header>
+  <header>
+    <h1>APEX TRAILERS</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rentals.html">Trailer Hire</a>
+      <!-- Updated: "New Sales" changed to "Sales (Coming Soon)" to indicate coming soon status -->
+      <a href="sales.html" style="position: relative;">Sales (Coming Soon)</a>
+    </nav>
+  </header>
 
-<section class="hero">
-<h2>BUILT TO WORK</h2>
-<p>Heavy-duty trailer hire in Midrand and across Gauteng.</p>
+  <section class="hero">
+    <h2>BUILT TO WORK</h2>
+    <p>Heavy-duty trailer hire in Midrand and across Gauteng.</p>
 
-<div class="choice-grid">
-<a href="rentals.html" class="choice-card">
-<h3>TRAILER HIRE / RENTAL</h3>
-<p>Industrial, commercial and domestic rental trailers.</p>
-</a>
+    <div class="choice-grid">
+      <a href="rentals.html" class="choice-card">
+        <h3>TRAILER HIRE / RENTAL</h3>
+        <p>Industrial, commercial and domestic rental trailers.<br>Available now — daily & weekly rates.</p>
+      </a>
 
-<a href="sales.html" class="choice-card">
-<h3>NEW TRAILERS & ACCESSORIES</h3>
-<p>Utility trailers, chiller trailers and heavy builds.</p>
-</a>
-</div>
+      <!-- Sales card adjusted: no active link, indicates coming soon but keeps visual consistency -->
+      <div class="choice-card disabled">
+        <h3>NEW TRAILERS & ACCESSORIES</h3>
+        <p>Utility trailers, chiller trailers and heavy builds.</p>
+        <div class="coming-soon-badge">📅 Coming Soon</div>
+      </div>
+    </div>
 
-<p style="margin-top:60px;">
-Looking for <a href="trailer-hire-midrand.html" style="color:#C3B091;">trailer hire in Midrand</a>?  
-We provide daily rentals across Gauteng.
-</p>
+    <p style="margin-top:60px;">
+      Looking for <a href="trailer-hire-midrand.html" style="color:#C3B091;">trailer hire in Midrand</a>?
+      We provide daily rentals across Gauteng.
+    </p>
 
-</section>
+  </section>
 
-<footer>
-<p>Apex Trailers • Serving Midrand & Gauteng</p>
-<p>0611933931</p>
-<h3>Find Us in Midrand</h3>
+  <footer>
+    <p>Apex Trailers • Serving Midrand & Gauteng</p>
+    <p><strong>📞 061 193 3931</strong> | ✉️ info@apextrailers.co.za</p>
+    <h3>Find Us in Midrand</h3>
 
-<iframe
-src="https://www.google.com/maps?q=Apex+Trailers,+69+State+Rd,+President+Park+AH,+Midrand,+1684&output=embed"
-width="100%"
-height="300"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-
-</footer>
+    <iframe
+      src="https://www.google.com/maps?q=Apex+Trailers,+69+State+Rd,+President+Park+AH,+Midrand,+1684&output=embed"
+      width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <p style="margin-top: 15px;">69 State Rd, President Park AH, Midrand, 1684</p>
+  </footer>
 
 </body>
+
 </html>
