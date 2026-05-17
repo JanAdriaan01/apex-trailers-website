@@ -5,60 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>New Trailers For Sale Midrand | Coming Soon | Apex Trailers</title>
+  <title>Apex Trailers | Trailer Hire Midrand Gauteng</title>
   <meta name="description"
-    content="New trailers for sale in Midrand Gauteng. Our new sales showroom is coming soon — heavy duty utility trailers, double axle trailers, and chiller trailers built for South African conditions.">
+    content="Heavy duty trailer hire in Midrand Gauteng. Reliable daily trailer rentals including single axle, double axle, car trailers and chiller trailers.">
 
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Local Business Schema -->
   <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"LocalBusiness",
- "@id":"https://apextrailers.co.za",
- "name":"Apex Trailers",
- "url":"https://apextrailers.co.za",
- "telephone":"+27-61-193-3931",
- "address":{
-   "@type":"PostalAddress",
-   "streetAddress":"69 State Rd, President Park AH",
-   "addressLocality":"Midrand",
-   "addressRegion":"Gauteng",
-   "postalCode":"1684",
-   "addressCountry":"ZA"
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "@id": "https://apextrailers.co.za",
+ "name": "Apex Trailers",
+ "url": "https://apextrailers.co.za",
+ "telephone": "+27-11-123-4567",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "69 State Rd, President Park AH",
+   "addressLocality": "Midrand",
+   "addressRegion": "Gauteng",
+   "postalCode": "1684",
+   "addressCountry": "ZA"
  },
- "areaServed":"Gauteng",
- "priceRange":"$$"
-}
-</script>
-
-  <!-- Review Schema -->
-  <script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"LocalBusiness",
- "name":"Apex Trailers",
- "aggregateRating":{
-   "@type":"AggregateRating",
-   "ratingValue":"4.7",
-   "reviewCount":"22"
- }
+ "areaServed": {
+   "@type": "AdministrativeArea",
+   "name": "Gauteng"
+ },
+ "priceRange": "$$"
 }
 </script>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       background: #2E2B25;
       color: #E5E0D6;
-      font-family: 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.5;
+      margin: 0;
+      font-family: Segoe UI, sans-serif;
     }
 
     header {
@@ -68,15 +51,11 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid #C3B091;
-      flex-wrap: wrap;
-      gap: 15px;
     }
 
     header h1 {
-      margin: 0;
       color: #C3B091;
-      font-size: 1.8rem;
-      letter-spacing: 1px;
+      margin: 0;
     }
 
     nav a {
@@ -84,225 +63,52 @@
       margin-left: 30px;
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.2s ease;
     }
 
-    nav a:hover {
-      color: #C3B091;
-    }
-
-    nav a.active {
-      color: #C3B091;
-      border-bottom: 2px solid #C3B091;
-      padding-bottom: 4px;
-    }
-
-    /* Main container */
-    .container {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 40px 60px;
-    }
-
-    /* COMING SOON HERO SECTION */
-    .coming-soon-hero {
-      background: linear-gradient(135deg, #1F1D18 0%, #2a2720 100%);
-      border: 2px solid #C3B091;
-      border-radius: 28px;
-      padding: 50px 40px;
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      margin-bottom: 50px;
-      position: relative;
-      overflow: hidden;
+      padding: 60px;
     }
 
-    .coming-soon-hero::before {
-      content: "⏳";
-      font-size: 140px;
-      opacity: 0.05;
-      position: absolute;
-      bottom: -20px;
-      right: 10px;
-      pointer-events: none;
-    }
-
-    .coming-badge {
-      display: inline-block;
-      background: #C3B091;
-      color: #1F1D18;
-      font-weight: bold;
-      padding: 6px 18px;
-      border-radius: 40px;
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
-    }
-
-    .coming-soon-hero h2 {
-      font-size: 3rem;
+    .hero h2 {
+      font-size: 2.5rem;
       color: #C3B091;
-      margin-bottom: 16px;
       letter-spacing: 2px;
     }
 
-    .coming-soon-hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 20px;
-      color: #ddd6ca;
-    }
-
-    .notify-btn {
-      background: #25D366;
-      color: white;
-      border: none;
-      padding: 12px 32px;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 50px;
-      cursor: pointer;
-      margin-top: 15px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: transform 0.2s, background 0.2s;
-      text-decoration: none;
-    }
-
-    .notify-btn:hover {
-      background: #1da85c;
-      transform: translateY(-2px);
-    }
-
-    /* Section styles */
-    .main {
-      width: 100%;
-    }
-
-    .section h2 {
-      font-size: 1.8rem;
-      color: #C3B091;
-      margin-bottom: 15px;
-      border-left: 4px solid #C3B091;
-      padding-left: 18px;
-    }
-
-    .section>p {
-      margin-bottom: 30px;
-      color: #cfc9bc;
-    }
-
-    /* Product grid styling — same as before but with subtle coming-soon overlay effect */
-    .grid {
+    .choice-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 35px;
-      margin: 40px 0 30px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 900px;
+      width: 100%;
+      margin-top: 50px;
     }
 
-    .card {
+    .choice-card {
       background: #1F1D18;
       border: 2px solid #C3B091;
-      border-radius: 16px;
-      overflow: hidden;
-      transition: transform 0.2s, box-shadow 0.2s;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* subtle indicator that these are previews/coming soon models */
-    .card::after {
-      content: "Coming Soon";
-      position: absolute;
-      top: 16px;
-      right: 16px;
-      background: #9b6a3c;
-      color: white;
-      font-size: 0.7rem;
-      font-weight: bold;
-      padding: 4px 12px;
-      border-radius: 30px;
-      letter-spacing: 0.5px;
-      z-index: 2;
-      backdrop-filter: blur(2px);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      display: block;
-      background: #3a352c;
-      filter: brightness(0.85);
-      transition: filter 0.2s;
-    }
-
-    .card:hover img {
-      filter: brightness(1);
-    }
-
-    .content {
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .content h3 {
-      margin: 0 0 10px 0;
-      font-size: 1.35rem;
-      color: #C3B091;
-    }
-
-    .price {
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin: 8px 0 12px 0;
-      color: #E5E0D6;
-      background: #2a2720;
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: 30px;
-      align-self: flex-start;
-    }
-
-    .whatsapp-btn {
-      margin-top: 12px;
-      background: #25D366;
-      color: white;
-      text-align: center;
-      padding: 10px;
+      padding: 50px;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 40px;
-      transition: background 0.2s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
+      color: #E5E0D6;
+      transition: 0.3s;
     }
 
-    .whatsapp-btn:hover {
-      background: #1DA15C;
+    .choice-card:hover {
+      background: #C3B091;
+      color: #1F1D18;
+      transform: translateY(-6px);
     }
 
-    .info-note {
-      background: #1F1D18;
-      border-left: 4px solid #C3B091;
-      padding: 20px 25px;
-      border-radius: 16px;
-      margin: 35px 0;
-    }
-
-    .info-note p {
-      margin: 5px 0;
-    }
-
-    .info-note a {
-      color: #C3B091;
-      text-decoration: underline;
+    .choice-card.disabled {
+      opacity: 0.7;
+      cursor: default;
+      pointer-events: none;
     }
 
     footer {
@@ -310,217 +116,60 @@
       border-top: 2px solid #C3B091;
       padding: 40px;
       text-align: center;
-      margin-top: 60px;
     }
 
-    footer h3 {
-      color: #C3B091;
-      margin-bottom: 20px;
-    }
-
-    footer iframe {
-      max-width: 100%;
-      border-radius: 12px;
-      margin: 15px 0;
-    }
-
-    /* Responsive */
-    @media (max-width: 1000px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
+    @media(max-width:800px) {
+      .choice-grid {
+        grid-template-columns: 1fr);
       }
-
-      .container {
-        padding: 30px 30px;
-      }
-
-      .coming-soon-hero h2 {
-        font-size: 2.2rem;
-      }
-    }
-
-    @media (max-width: 700px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      header {
-        flex-direction: column;
-        text-align: center;
-        padding: 18px;
-      }
-
-      nav a {
-        margin: 0 15px;
-      }
-
-      .container {
-        padding: 20px;
-      }
-
-      .coming-soon-hero {
-        padding: 35px 20px;
-      }
-
-      .coming-soon-hero h2 {
-        font-size: 1.8rem;
-      }
-    }
   </style>
-
 </head>
 
 <body>
 
   <header>
-    <a href="index.html" style="text-decoration:none;">
-      <h1>APEX TRAILERS</h1>
-    </a>
+    <h1>APEX TRAILERS</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="rentals.html">Trailer Hire</a>
-      <a href="sales.html" class="active">New Sales</a>
+      <a href="sales.html">Sales (Coming Soon)</a>
     </nav>
   </header>
 
-  <div class="container">
-    <main class="main">
-      <!-- COMING SOON HERO with CTA to get notified -->
-      <div class="coming-soon-hero">
-        <div class="coming-badge">🚧 NEW SHOWROOM COMING SOON</div>
-        <h2>Heavy Duty Trailers<br>For Sale — Launching Soon</h2>
-        <p>We're preparing the finest utility, double axle and chiller trailers built for South African conditions.
-          Get notified when our new sales collection officially arrives.</p>
-        <a href="https://wa.me/27611933931?text=Hi%20Apex%20Trailers,%20I'm%20interested%20in%20the%20new%20trailer%20sales%20launch.%20Please%20notify%20me%20when%20available!"
-          class="notify-btn" target="_blank">
-          📢 Notify Me on WhatsApp
-        </a>
+  <section class="hero">
+    <h2>BUILT TO WORK</h2>
+    <p>Heavy-duty trailer hire in Midrand and across Gauteng.</p>
+
+    <div class="choice-grid">
+      <a href="rentals.html" class="choice-card">
+        <h3>TRAILER HIRE / RENTAL</h3>
+        <p>Industrial, commercial and domestic rental trailers.</p>
+      </a>
+
+      <div class="choice-card disabled">
+        <h3>NEW TRAILERS & ACCESSORIES</h3>
+        <p>Utility trailers, chiller trailers and heavy builds.</p>
+        <p style="font-size:0.8rem; margin-top:10px; color:#C3B091;">Coming Soon</p>
       </div>
+    </div>
 
-      <section class="section">
-        <h2>Preview: Upcoming Models</h2>
-        <p>
-          Our brand-new trailer range is almost ready. Below you'll find a preview of the heavy-duty trailers we will
-          offer.
-          Prices and full specs coming soon — enquire now to be first in line.
-        </p>
+    <p style="margin-top:60px;">
+      Looking for <a href="trailer-hire-midrand.html" style="color:#C3B091;">trailer hire in Midrand</a>?
+      We provide daily rentals across Gauteng.
+    </p>
 
-        <div class="grid">
-          <!-- PRODUCT CARD 1 -->
-          <div class="card">
-            <img
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%234a4238'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23C3B091' font-size='20' font-family='monospace'%3E1.8m Utility%3C/text%3E%3C/svg%3E"
-              alt="1.8m utility trailer preview for sale Midrand Gauteng" loading="lazy">
-            <div class="content">
-              <h3>1.8m Utility Trailer</h3>
-              <div class="price">Price: Coming Soon</div>
-              <a class="whatsapp-btn"
-                href="https://wa.me/27611933931?text=Hi%20Apex%20Trailers,%20I'm%20interested%20in%20the%201.8m%20utility%20trailer%20(launching%20soon).%20Please%20share%20details%20and%20notify%20me."
-                target="_blank">📲 Enquire / Pre-order</a>
-            </div>
-          </div>
-
-          <!-- PRODUCT CARD 2 -->
-          <div class="card">
-            <img
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%23544c3f'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23C3B091' font-size='20' font-family='monospace'%3E2.4m Utility%3C/text%3E%3C/svg%3E"
-              alt="2.4m utility trailer preview for sale Midrand Gauteng" loading="lazy">
-            <div class="content">
-              <h3>2.4m Utility Trailer</h3>
-              <div class="price">Price: Coming Soon</div>
-              <a class="whatsapp-btn"
-                href="https://wa.me/27611933931?text=Hi%20Apex%20Trailers,%20I'm%20interested%20in%20the%202.4m%20utility%20trailer%20(launching%20soon).%20Please%20keep%20me%20updated."
-                target="_blank">📲 Enquire / Pre-order</a>
-            </div>
-          </div>
-
-          <!-- PRODUCT CARD 3 -->
-          <div class="card">
-            <img
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%233f3a30'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23C3B091' font-size='20' font-family='monospace'%3E3.0m Utility%3C/text%3E%3C/svg%3E"
-              alt="3m utility trailer preview for sale Midrand Gauteng" loading="lazy">
-            <div class="content">
-              <h3>3.0m Utility Trailer</h3>
-              <div class="price">Price: Coming Soon</div>
-              <a class="whatsapp-btn"
-                href="https://wa.me/27611933931?text=Hi%20Apex%20Trailers,%20interested%20in%20the%203.0m%20utility%20trailer%20(coming%20soon).%20Please%20send%20specs%20when%20available."
-                target="_blank">📲 Enquire / Pre-order</a>
-            </div>
-          </div>
-
-          <!-- PRODUCT CARD 4 -->
-          <div class="card">
-            <img
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%235e5545'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23C3B091' font-size='20' font-family='monospace'%3E3.5m Double Axle%3C/text%3E%3C/svg%3E"
-              alt="3.5m double axle trailer preview for sale Midrand Gauteng" loading="lazy">
-            <div class="content">
-              <h3>3.5m Double Axle Trailer</h3>
-              <div class="price">Price: Coming Soon</div>
-              <a class="whatsapp-btn"
-                href="https://wa.me/27611933931?text=Hi%20Apex%20Trailers,%20I%20need%20a%20heavy-duty%20double%20axle.%20Notify%20me%20when%203.5m%20is%20available%20for%20sale."
-                target="_blank">📲 Enquire / Pre-order</a>
-            </div>
-          </div>
-
-          <!-- PRODUCT CARD 5 -->
-          <div class="card">
-            <img
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%233f3a30'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23C3B091' font-size='20' font-family='monospace'%3ESingle Axle Chiller%3C/text%3E%3C/svg%3E"
-              alt="single axle chiller trailer preview for sale Midrand" loading="lazy">
-            <div class="content">
-              <h3>Single Axle Chiller Trailer</h3>
-              <div class="price">Price: Coming Soon</div>
-              <a class="whatsapp-btn"
-                href="https://wa.me/27611933931?text=Hi%20Apex%20Trailers,%20I'm%20interested%20in%20the%20single%20axle%20chiller%20trailer%20(sales).%20Please%20let%20me%20know%20pricing%20and%20ETA."
-                target="_blank">📲 Enquire / Pre-order</a>
-            </div>
-          </div>
-
-          <!-- PRODUCT CARD 6 -->
-          <div class="card">
-            <img
-              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%23544c3f'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23C3B091' font-size='20' font-family='monospace'%3EDouble Axle Chiller%3C/text%3E%3C/svg%3E"
-              alt="double axle chiller trailer preview for sale Midrand" loading="lazy">
-            <div class="content">
-              <h3>Double Axle Chiller Trailer</h3>
-              <div class="price">Price: Coming Soon</div>
-              <a class="whatsapp-btn"
-                href="https://wa.me/27611933931?text=Hi%20Apex%20Trailers,%20I%20need%20a%20double%20axle%20chiller%20trailer.%20Please%20share%20details%20once%20sales%20launch."
-                target="_blank">📲 Enquire / Pre-order</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Additional message: Hire still available -->
-        <div class="info-note">
-          <p>🔹 <strong>Need a trailer today?</strong> While our new sales collection is coming soon, we offer reliable
-            <a href="rentals.html">trailer hire in Midrand</a> — available for same-day collection.</p>
-          <p>🔹 <strong>Custom orders & bulk inquiries:</strong> Contact us directly to discuss fleet orders or bespoke
-            trailer builds.</p>
-          <p>🔹 <strong>Launch date announcement:</strong> Follow us on WhatsApp to get the exact launch date and
-            exclusive early-bird pricing.</p>
-        </div>
-
-        <section style="margin-top: 20px;">
-          <h3>Rentals still available today</h3>
-          <p>
-            If you are not ready to purchase, we also provide
-            <a href="rentals.html" style="color:#C3B091; font-weight: bold;">trailer hire in Midrand</a>
-            including car trailers, double axle trailers and chiller trailers — fully serviced and roadworthy.
-          </p>
-        </section>
-      </section>
-    </main>
-  </div>
+  </section>
 
   <footer>
-    <h3>Visit Apex Trailers Midrand</h3>
+    <p>Apex Trailers • Serving Midrand & Gauteng</p>
+    <p>0611933931</p>
+    <h3>Find Us in Midrand</h3>
+
     <iframe
       src="https://www.google.com/maps?q=Apex+Trailers,+69+State+Rd,+President+Park+AH,+Midrand,+1684&output=embed"
-      width="100%" height="300" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"></iframe>
-    <p>69 State Rd, President Park AH, Midrand, Gauteng</p>
-    <p style="margin-top: 12px;">📞 061 193 3931 | ✉️ sales@apextrailers.co.za</p>
-    <p style="font-size: 0.85rem; opacity: 0.8;">© Apex Trailers — New trailer sales launching soon in Gauteng</p>
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+
   </footer>
 
 </body>
