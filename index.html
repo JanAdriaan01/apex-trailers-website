@@ -141,43 +141,86 @@
       border: 3px solid #C6AD7A;
       padding: 50px;
       text-decoration: none;
-      color: #E5E0D6;
       transition: all 0.3s ease;
       border-radius: 16px;
       box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
     }
 
-    .choice-card:hover {
-      background: #C6AD7A;
-      color: #1F1D18;
-      transform: translateY(-6px);
+    /* Active card (Trailer Hire) - high visibility */
+    .choice-card.active-card {
+      background: #2A2720;
       border-color: #E8D5A8;
-      box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.25);
     }
 
+    .choice-card.active-card h3 {
+      color: #E8D5A8;
+    }
+
+    .choice-card.active-card p {
+      color: #D4CDB8;
+    }
+
+    .choice-card.active-card:hover {
+      background: #C6AD7A;
+      transform: translateY(-6px);
+      border-color: #E8D5A8;
+    }
+
+    .choice-card.active-card:hover h3 {
+      color: #1F1D18;
+    }
+
+    .choice-card.active-card:hover p {
+      color: #1F1D18;
+    }
+
+    /* Standard card styles */
     .choice-card h3 {
       font-size: 1.6rem;
       letter-spacing: 1.5px;
       margin-bottom: 15px;
+      color: #C6AD7A;
     }
 
     .choice-card p {
       font-size: 1rem;
       font-weight: 500;
+      color: #B8AE98;
+      line-height: 1.4;
+    }
+
+    .choice-card:hover {
+      background: #C6AD7A;
+      transform: translateY(-6px);
+      border-color: #E8D5A8;
+    }
+
+    .choice-card:hover h3 {
+      color: #1F1D18;
+    }
+
+    .choice-card:hover p {
+      color: #1F1D18;
     }
 
     /* Disabled style for coming soon card */
     .choice-card.disabled {
-      opacity: 0.8;
+      opacity: 0.85;
       cursor: default;
       pointer-events: none;
+    }
+
+    .choice-card.disabled h3 {
+      color: #9B8A6B;
+    }
+
+    .choice-card.disabled p {
+      color: #7A6F55;
     }
 
     .choice-card.disabled:hover {
       transform: none;
       background: #1F1D18;
-      color: #E5E0D6;
-      border-color: #C6AD7A;
     }
 
     .coming-soon-badge {
@@ -282,7 +325,7 @@
     <p>Trailer hire in Midrand and across Gauteng.</p>
 
     <div class="choice-grid">
-      <a href="rentals.html" class="choice-card">
+      <a href="rentals.html" class="choice-card active-card">
         <h3>TRAILER HIRE / RENTAL</h3>
         <p>Industrial, commercial and domestic rental trailers.<br>Available now — daily & weekly rates.</p>
       </a>
