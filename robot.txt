@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://apextrailers.co.za/sitemap.xml

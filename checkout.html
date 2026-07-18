@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Check Trailer Availability | Apex Trailers</title>
+  <meta name="description" content="Choose an Apex trailer and send an availability request to Apex Trailers on WhatsApp before making payment.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">APEX <span>TRAILERS</span></a>
+    <nav class="main-nav"><a href="index.html">HOME</a><a class="active" href="index.html#fleet">TRAILER HIRE</a><a href="assets/docs/Apex_Trailer_Rental_Price_List.pdf" download>PRICE LIST</a></nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Confirm before paying</div>
+      <h1>CHECK AVAILABILITY</h1>
+      <p>Select the trailer and send the request to Apex Trailers on WhatsApp. Do not make payment until Apex confirms availability.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container checkout-layout">
+      <form id="bookingForm" class="checkout-card">
+        <h2>YOUR REQUEST</h2>
+        <div class="form-grid">
+          <div class="form-field full"><label for="trailer">Selected trailer</label><select id="trailer" required><option value="MDN-001">Trailer 1 - MDN-001 - R335/day</option><option value="MDN-002">Trailer 2 - MDN-002 - R355/day</option><option value="MDN-003">Trailer 3 - MDN-003 - R385/day</option><option value="MDN-004">Trailer 4 - MDN-004 - R420/day</option></select></div>
+          <div class="form-field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required placeholder="Your full name"></div>
+          <div class="form-field"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="e.g. 082 123 4567"></div>
+          <div class="form-field"><label for="pickup">Preferred pickup date</label><input id="pickup" name="pickup" type="date" required></div>
+          <div class="form-field"><label for="days">Number of hire days</label><input id="days" name="days" type="number" min="1" max="30" value="1" required></div>
+        </div>
+        <div class="notice" style="margin-top:22px;margin-bottom:0"><strong>Do not pay yet.</strong> Apex Trailers must confirm availability first.</div>
+      </form>
+      <aside class="checkout-card">
+        <div class="eyebrow">Request summary</div>
+        <h2 id="selectedTrailer">Trailer 1 - MDN-001</h2>
+        <p id="selectedDimensions"></p>
+        <div class="summary-row"><span>Daily rate</span><strong id="dailyRate">R335</strong></div>
+        <div class="summary-row"><span>Hire period</span><strong id="hireDays">1 day</strong></div>
+        <div class="summary-row"><span>Estimated hire</span><strong id="hireSubtotal">R335</strong></div>
+        <div class="summary-row"><span>Refundable deposit</span><strong id="depositTotal">R335</strong></div>
+        <p class="checkout-warning">These figures are shown for reference. Payment instructions follow only after availability is confirmed.</p>
+        <div class="checkout-actions">
+          <a id="whatsappButton" class="btn whatsapp" href="#">SEND AVAILABILITY REQUEST</a>
+          <a class="btn secondary" href="assets/docs/Apex_General_Terms_and_Conditions.pdf" download>DOWNLOAD GENERAL T&amp;C</a>
+          <a class="btn secondary" href="index.html#fleet">CHOOSE ANOTHER TRAILER</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+
+  <section class="location-section" aria-labelledby="location-heading">
+    <div class="container">
+      <div class="location-copy">
+        <div class="eyebrow">Find us in Midrand</div>
+        <h2 id="location-heading">APEX TRAILERS LOCATION</h2>
+        <p>69 State Rd, President Park AH, Midrand, 1684</p>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Apex+Trailers,+69+State+Rd,+President+Park+AH,+Midrand,+1684&output=embed"
+          title="Google Map showing Apex Trailers in President Park, Midrand"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><h3>APEX TRAILERS</h3><p>President Park, Midrand</p></div><div class="footer-contact">
+      <h3>CONTACT</h3>
+      <div class="footer-actions">
+        <a class="btn whatsapp contact-btn" href="https://wa.me/27687121066?text=Hi%20Apex%20Trailers%2C%20I%20would%20like%20to%20check%20trailer%20availability." target="_blank" rel="noopener">WHATSAPP BOOKINGS</a>
+        <a class="btn contact-btn" href="tel:+27754613153">CALL APEX TRAILERS</a>
+      </div>
+    </div><div><h3>Documents</h3><p>The full customer document pack is supplied after details and payment are received.</p></div></div></footer>
+<script src="assets/js/checkout.js"></script>
+</body>
+</html>

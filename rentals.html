@@ -1,647 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en-ZA">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Trailer Hire Midrand | Trailer Rental Gauteng | Apex Trailers</title>
-
-  <meta name="description"
-    content="Trailer hire in Midrand Gauteng. 2.4m, 2.0m and 1.8m trailers available for daily rental. Book online or via WhatsApp.">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Local Business Schema -->
-  <script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "@id": "https://apextrailers.co.za",
- "name": "Apex Trailers",
- "url": "https://apextrailers.co.za",
- "telephone": "+27-61-193-3931",
- "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "69 State Rd, President Park AH",
-   "addressLocality": "Midrand",
-   "addressRegion": "Gauteng",
-   "postalCode": "1684",
-   "addressCountry": "ZA"
- },
- "areaServed": {
-   "@type": "AdministrativeArea",
-   "name": "Gauteng"
- },
- "priceRange": "$$"
-}
-</script>
-
-  <!-- Review Schema -->
-  <script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "Apex Trailers",
- "aggregateRating": {
-   "@type": "AggregateRating",
-   "ratingValue": "4.7",
-   "reviewCount": "22"
- }
-}
-</script>
-
-  <style>
-    /* TOYOTA 4E9 SANDY TAUPE - DOMINANT COLOUR SCHEME */
-    /* LAND CRUISER BOLD TYPOGRAPHY THROUGHOUT */
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: #C6AD7A;
-      color: #1F1D18;
-      margin: 0;
-      font-family: 'Impact', 'Arial Black', 'Segoe UI Black', 'Roboto Black', sans-serif;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-
-    /* LAND CRUISER STYLING - BOLD, DOMINANT, POWERFUL */
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    a,
-    button,
-    .price,
-    .dimensions,
-    .deposit,
-    nav a,
-    .sidebar button,
-    .whatsapp-btn {
-      font-family: 'Impact', 'Arial Black', 'Segoe UI Black', 'Roboto Black', sans-serif;
-      font-weight: 800;
-      letter-spacing: 0.8px;
-    }
-
-    /* Slightly lighter for smaller text */
-    .dimensions,
-    .deposit,
-    .coming-badge {
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-
-    header {
-      background: #1F1D18;
-      padding: 25px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 4px solid #C6AD7A;
-    }
-
-    header h1 {
-      margin: 0;
-      color: #C6AD7A;
-      font-family: 'Impact', 'Arial Black', sans-serif;
-      font-size: 2.2rem;
-      letter-spacing: 3px;
-      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
-    }
-
-    nav a {
-      color: #C6AD7A;
-      margin-left: 35px;
-      text-decoration: none;
-      font-weight: 800;
-      font-size: 1.1rem;
-      letter-spacing: 1px;
-      transition: all 0.2s ease;
-    }
-
-    nav a:hover {
-      color: #E8D5A8;
-      text-decoration: underline;
-    }
-
-    nav a.active {
-      color: #E8D5A8;
-      border-bottom: 3px solid #E8D5A8;
-      padding-bottom: 6px;
-    }
-
-    .container {
-      display: flex;
-      padding: 50px 60px;
-      gap: 45px;
-    }
-
-    /* Sidebar - Sandy Taupe dominant */
-    .sidebar {
-      width: 280px;
-      background: #1F1D18;
-      padding: 30px 25px;
-      border: 3px solid #C6AD7A;
-      border-radius: 16px;
-      box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
-    }
-
-    .sidebar h3 {
-      color: #C6AD7A;
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 1.6rem;
-      letter-spacing: 2px;
-      text-align: center;
-      border-bottom: 2px solid #C6AD7A;
-      padding-bottom: 10px;
-    }
-
-    .sidebar button {
-      width: 100%;
-      padding: 14px;
-      margin-bottom: 12px;
-      background: #C6AD7A;
-      border: none;
-      cursor: pointer;
-      font-weight: 800;
-      font-size: 1rem;
-      letter-spacing: 1px;
-      color: #1F1D18;
-      border-radius: 40px;
-      transition: all 0.2s ease;
-      text-transform: uppercase;
-    }
-
-    .sidebar button:hover {
-      background: #E8D5A8;
-      transform: translateX(4px);
-      box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
-    }
-
-    .main {
-      flex: 1;
-    }
-
-    .main h2 {
-      font-size: 2.3rem;
-      color: #1F1D18;
-      font-family: 'Impact', 'Arial Black', sans-serif;
-      letter-spacing: 2px;
-      margin-bottom: 25px;
-      border-left: 6px solid #1F1D18;
-      padding-left: 20px;
-      text-transform: uppercase;
-      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Product grid */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 35px;
-    }
-
-    .card {
-      background: #1F1D18;
-      border: 3px solid #C6AD7A;
-      border-radius: 16px;
-      display: flex;
-      flex-direction: column;
-      transition: all 0.2s ease;
-      box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.25);
-      border-color: #E8D5A8;
-    }
-
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-top-left-radius: 13px;
-      border-top-right-radius: 13px;
-      border-bottom: 2px solid #C6AD7A;
-    }
-
-    .content {
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .content h3 {
-      margin: 0 0 12px;
-      font-size: 1.6rem;
-      color: #C6AD7A;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-
-    .dimensions {
-      font-size: 0.9rem;
-      color: #B8AE98;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-
-    .capacity {
-      font-size: 0.85rem;
-      color: #B8AE98;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-
-    .price {
-      font-weight: 800;
-      margin: 12px 0 5px;
-      font-size: 1.4rem;
-      color: #E8D5A8;
-      letter-spacing: 1px;
-    }
-
-    .deposit {
-      font-size: 0.85rem;
-      margin-bottom: 15px;
-      color: #B8AE98;
-      font-weight: 600;
-    }
-
-    .whatsapp-btn {
-      margin-top: auto;
-      background: #C6AD7A;
-      color: #1F1D18;
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-weight: 800;
-      font-size: 1rem;
-      letter-spacing: 1.5px;
-      border-radius: 40px;
-      transition: all 0.2s ease;
-      text-transform: uppercase;
-    }
-
-    .whatsapp-btn:hover {
-      background: #E8D5A8;
-      transform: scale(1.02);
-    }
-
-    .coming-badge {
-      background: #8B6914;
-      color: #E8D5A8;
-      font-size: 0.7rem;
-      padding: 5px 12px;
-      border-radius: 30px;
-      margin-bottom: 12px;
-      display: inline-block;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    /* Section styling - Sandy Taupe dominant */
-    section {
-      background: #1F1D18;
-      padding: 28px;
-      border-radius: 16px;
-      border-left: 6px solid #C6AD7A;
-      margin-top: 40px;
-    }
-
-    section h3 {
-      color: #C6AD7A;
-      font-size: 1.6rem;
-      letter-spacing: 1.5px;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-    }
-
-    section h4 {
-      color: #E8D5A8;
-      font-size: 1.2rem;
-      letter-spacing: 1px;
-      margin-top: 15px;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-    }
-
-    section p {
-      color: #D4CDB8;
-      font-weight: 500;
-      line-height: 1.5;
-      margin-bottom: 8px;
-    }
-
-    section a {
-      color: #C6AD7A;
-      text-decoration: underline;
-      font-weight: 700;
-    }
-
-    section a:hover {
-      color: #E8D5A8;
-    }
-
-    footer {
-      background: #1F1D18;
-      border-top: 4px solid #C6AD7A;
-      padding: 45px;
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    footer h3 {
-      color: #C6AD7A;
-      font-size: 1.5rem;
-      letter-spacing: 2px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
-
-    footer p {
-      color: #D4CDB8;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      margin: 10px 0;
-    }
-
-    footer iframe {
-      max-width: 100%;
-      border-radius: 16px;
-      border: 3px solid #C6AD7A;
-      margin: 20px 0;
-    }
-
-    /* FLOATING WHATSAPP BUTTON - SANDY TAUPE THEME */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #C6AD7A;
-      color: #1F1D18;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
-      transition: all 0.3s ease;
-      z-index: 1000;
-      border: 2px solid #1F1D18;
-    }
-
-    .whatsapp-float:hover {
-      background: #E8D5A8;
-      transform: scale(1.1);
-      box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4);
-    }
-
-    .whatsapp-float svg {
-      width: 32px;
-      height: 32px;
-      fill: #1F1D18;
-    }
-
-    /* Pulse animation */
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 rgba(198, 173, 122, 0.7);
-      }
-
-      70% {
-        box-shadow: 0 0 0 15px rgba(198, 173, 122, 0);
-      }
-
-      100% {
-        box-shadow: 0 0 0 0 rgba(198, 173, 122, 0);
-      }
-    }
-
-    .whatsapp-float {
-      animation: pulse 2s infinite;
-    }
-
-    /* Mobile responsive */
-    @media(max-width: 768px) {
-      .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-      }
-
-      .whatsapp-float svg {
-        width: 26px;
-        height: 26px;
-      }
-    }
-
-    @media(max-width: 1100px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media(max-width: 800px) {
-      .container {
-        flex-direction: column;
-        padding: 30px;
-      }
-
-      .sidebar {
-        width: 100%;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-        text-align: center;
-      }
-
-      nav a {
-        margin: 0 15px;
-      }
-
-      .main h2 {
-        font-size: 1.6rem;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Apex Trailers | Trailer Hire in Midrand</title>
+  <meta name="description" content="Trailer hire in President Park, Midrand. Compare four trailers, current daily rates and refundable deposits, then check the exact trailer's availability on WhatsApp.">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
-  <header>
-    <a href="index.html" style="text-decoration:none;">
-      <h1>APEX TRAILERS</h1>
-    </a>
-    <nav>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">APEX <span>TRAILERS</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
       <a href="index.html">HOME</a>
-      <a href="rentals.html" class="active">TRAILER HIRE</a>
+      <a class="active" href="#fleet">TRAILER HIRE</a>
+      <a href="#price-list">PRICE LIST</a>
     </nav>
-  </header>
-
-  <div class="container">
-
-    <aside class="sidebar">
-      <h3>CATEGORIES</h3>
-      <button onclick="filterCategory('all')">ALL TRAILERS</button>
-      <button onclick="filterCategory('available')">AVAILABLE NOW</button>
-      <button onclick="filterCategory('coming')">COMING SOON</button>
-    </aside>
-
-    <div class="main">
-      <h2>TRAILER HIRE IN MIDRAND</h2>
-
-      <div class="grid" id="productGrid"></div>
-
-      <section>
-        <h3>RENTAL INFORMATION</h3>
-        <p>• VALID SOUTH AFRICAN DRIVER'S LICENSE REQUIRED</p>
-        <p>• REFUNDABLE DEPOSIT APPLIES</p>
-        <p>• ALL TRAILERS INSPECTED BEFORE DISPATCH</p>
-        <p>• FAST WHATSAPP BOOKING AVAILABLE</p>
-      </section>
-
-      <section>
-        <h3>TRAILER HIRE IN MIDRAND</h3>
-        <p>
-          We provide reliable <a href="trailer-hire-midrand.html">TRAILER HIRE IN MIDRAND</a> and serve surrounding
-          Gauteng areas including Centurion, Randburg and Sandton.
-        </p>
-      </section>
-
-      <section>
-        <h3>FREQUENTLY ASKED QUESTIONS</h3>
-        <h4>HOW MUCH IS TRAILER HIRE IN MIDRAND?</h4>
-        <p>Rental prices start from R260 per day depending on trailer type.</p>
-        <h4>DO I NEED A DEPOSIT?</h4>
-        <p>Yes, a refundable deposit applies to all rentals.</p>
-        <h4>WHAT AREAS DO YOU SERVE?</h4>
-        <p>We are based in Midrand and serve customers across Gauteng.</p>
-      </section>
-
-    </div>
   </div>
+</header>
 
-  <footer>
-    <h3>FIND US IN MIDRAND</h3>
-    <iframe
-      src="https://www.google.com/maps?q=Apex+Trailers,+69+State+Rd,+President+Park+AH,+Midrand,+1684&output=embed"
-      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    <p>69 State Rd, President Park AH, Midrand, 1684</p>
-    <p>061 193 3931</p>
-  </footer>
-
-  <!-- FLOATING WHATSAPP BUTTON - SANDY TAUPE THEME -->
-  <a href="https://wa.me/27611933931?text=Hi%20Apex%20Trailers,%20I%20would%20like%20to%20enquire%20about%20trailer%20hire%20in%20Midrand."
-    class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-      <path
-        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.2-17.1-41.3-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.1 13.9 10.9-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-    </svg>
-  </a>
-
-  <script>
-    // ONLY 3 TRAILERS as specified:
-    // 1) 2.4m x 1.5m x 1.2m - 750kg - R350/day - R350 deposit - Available now
-    // 2) 1.8m x 1.2m x 0.7m - 500kg - R260/day - R260 deposit - Coming soon
-    // 3) 2.0m x 1.2m x 0.8m - 500kg - R300/day - R300 deposit - Coming soon
-
-    const rentals = [
-      {
-        cat: "available",
-        name: "2.4M TRAILER",
-        dimensions: "2.4m long x 1.5m wide x 1.2m high",
-        capacity: "750kg load capacity",
-        price: "R350 / DAY",
-        deposit: "R350 DEPOSIT",
-        img: "images/rentals/single-axle/single-axle-2-4m-500kg-midrand.jpg",
-        status: "available"
-      },
-      {
-        cat: "coming",
-        name: "1.8M TRAILER",
-        dimensions: "1.8m long x 1.2m wide x 0.7m high",
-        capacity: "500kg load capacity",
-        price: "R260 / DAY",
-        deposit: "R260 DEPOSIT",
-        img: "images/rentals/single-axle/single-axle-1-8m-500kg-midrand.jpg",
-        status: "coming"
-      },
-      {
-        cat: "coming",
-        name: "2.0M TRAILER",
-        dimensions: "2.0m long x 1.2m wide x 0.8m high",
-        capacity: "500kg load capacity",
-        price: "R300 / DAY",
-        deposit: "R300 DEPOSIT",
-        img: "images/rentals/single-axle/single-axle-2-0m-500kg-midrand.jpg",
-        status: "coming"
-      }
-    ];
-
-    const grid = document.getElementById("productGrid");
-
-    function renderProducts(data) {
-      grid.innerHTML = "";
-      data.forEach(item => {
-        const message = encodeURIComponent(`Hi Apex Trailers, I would like to book the following trailer:\n\n${item.name}\n${item.dimensions}\n${item.capacity}\n${item.price}\n${item.deposit}\n\nPlease confirm availability.`);
-
-        let statusHTML = "";
-        if (item.status === "coming") {
-          statusHTML = `<div class="coming-badge">COMING SOON</div>`;
-        }
-
-        grid.innerHTML += `
-    <div class="card" data-cat="${item.cat}">
-      <img src="${item.img}" alt="${item.name} trailer hire in Midrand Gauteng" loading="lazy" onerror="this.src='https://placehold.co/600x400/1F1D18/C6AD7A?text=${encodeURIComponent(item.name)}'">
-      <div class="content">
-        ${statusHTML}
-        <h3>${item.name}</h3>
-        <div class="dimensions">${item.dimensions}</div>
-        <div class="capacity">${item.capacity}</div>
-        <div class="price">${item.price}</div>
-        <div class="deposit">${item.deposit}</div>
-        <a class="whatsapp-btn" href="https://wa.me/27611933931?text=${message}" target="_blank">ENQUIRE ON WHATSAPP</a>
+<main>
+  <section class="hero home-hero" aria-label="Apex Trailer Rentals">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="eyebrow">President Park, Midrand</div>
+        <h1>APEX<br><span>TRAILER RENTALS</span></h1>
+        <p>THE RIGHT TRAILER FOR EVERY JOB.</p>
       </div>
-    </div>`;
-      });
-    }
+    </div>
+  </section>
 
-    function filterCategory(cat) {
-      document.querySelectorAll('.card').forEach(card => {
-        if (cat === 'all') {
-          card.style.display = 'flex';
-        } else if (cat === 'available') {
-          card.style.display = card.dataset.cat === 'available' ? 'flex' : 'none';
-        } else if (cat === 'coming') {
-          card.style.display = card.dataset.cat === 'coming' ? 'flex' : 'none';
-        }
-      });
-    }
+  <section class="section" id="fleet">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Choose the right trailer</div>
+          <h2>TRAILER HIRE</h2>
+        </div>
+        <p>Review the trailer details and rates below. Use the button on the exact trailer you want to ask Apex Trailers to confirm availability on WhatsApp.</p>
+      </div>
 
-    renderProducts(rentals);
-  </script>
+      <div class="notice">
+        <strong>Important:</strong> Check availability before making payment. Apex Trailers will confirm the trailer and provide the next booking steps on WhatsApp.
+      </div>
 
+      <div id="fleetGrid" class="fleet-grid"></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="price-list">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Save or share</div>
+          <h2>DOWNLOADABLE PRICE LIST</h2>
+        </div>
+        <p>The PDF includes the current rates, trailer identification guide, booking conditions and Standard Bank EFT details. Confirm availability before paying.</p>
+      </div>
+
+      <div class="price-list-grid">
+        <a class="preview-card" href="assets/docs/Apex_Trailer_Rental_Price_List.pdf" download aria-label="Download Apex Trailer Rental price list">
+          <img src="assets/images/apex-price-list-preview.png" alt="Apex Trailer Rental Schedule with four current hire rates">
+        </a>
+        <aside class="info-card">
+          <h3>CURRENT HIRE RATES</h3>
+          <ul>
+            <li>MDN-001: R335 per day + R335 deposit</li>
+            <li>MDN-002: R355 per day + R355 deposit</li>
+            <li>MDN-003: R385 per day + R385 deposit</li>
+            <li>MDN-004: R420 per day + R420 deposit</li>
+          </ul>
+          <a class="btn" href="assets/docs/Apex_Trailer_Rental_Price_List.pdf" download>DOWNLOAD PRICE LIST PDF</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="important-information">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Rental terms</div>
+          <h2>IMPORTANT INFORMATION</h2>
+        </div>
+      </div>
+
+      <div class="payment-strip">
+        <div class="payment-item"><strong>Valid licence</strong>A valid South African driver's licence is required.</div>
+        <div class="payment-item"><strong>Refundable deposit</strong>The listed deposit is payable with the hire amount after availability is confirmed.</div>
+        <div class="payment-item"><strong>Clean return</strong>Trailers must be returned clean and in good condition.</div>
+        <div class="payment-item"><strong>No cash</strong>EFT or card payments only.</div>
+      </div>
+
+      <div class="terms-download">
+        <div>
+          <h3>GENERAL TERMS AND CONDITIONS</h3>
+          <p>Download and review the general rental terms before booking. The customer-specific Rental Agreement and trailer-specific Rental Schedule, handover and return checklist will be shared after the customer provides the required information and payment is confirmed.</p>
+        </div>
+        <a class="btn dark" href="assets/docs/Apex_General_Terms_and_Conditions.pdf" download>DOWNLOAD GENERAL T&amp;C PDF</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="location-section" aria-labelledby="location-heading">
+    <div class="container">
+      <div class="location-copy">
+        <div class="eyebrow">Find us in Midrand</div>
+        <h2 id="location-heading">APEX TRAILERS LOCATION</h2>
+        <p>69 State Rd, President Park AH, Midrand, 1684</p>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Apex+Trailers,+69+State+Rd,+President+Park+AH,+Midrand,+1684&output=embed"
+          title="Google Map showing Apex Trailers in President Park, Midrand"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><h3>APEX TRAILERS</h3><p>President Park, Midrand</p></div>
+    <div class="footer-contact">
+      <h3>CONTACT</h3>
+      <div class="footer-actions">
+        <a class="btn whatsapp contact-btn" href="https://wa.me/27687121066?text=Hi%20Apex%20Trailers%2C%20I%20would%20like%20to%20check%20trailer%20availability." target="_blank" rel="noopener">WHATSAPP BOOKINGS</a>
+        <a class="btn contact-btn" href="tel:+27754613153">CALL APEX TRAILERS</a>
+      </div>
+    </div>
+    <div><h3>Hours</h3><p>06:00-18:00<br>Monday-Sunday</p></div>
+  </div>
+</footer>
+
+<a class="floating-wa" href="https://wa.me/27687121066?text=Hi%20Apex%20Trailers%2C%20I%20would%20like%20to%20check%20trailer%20availability." aria-label="WhatsApp Apex Trailers">WA</a>
+<script src="assets/js/rentals.js"></script>
 </body>
-
 </html>
